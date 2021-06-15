@@ -2,13 +2,13 @@
 module.exports = {
   title: 'Inviso Alteryx Documetation',
   tagline: 'Alteryx rules the world!',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://carleneoestergaard.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'carleneoestergaard', // Usually your GitHub org/user name.
-  projectName: 'inviso-alteryx', // Usually your repo name.
+  projectName: 'carleneoestergaard.github.io', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Alteryx Documentation',
