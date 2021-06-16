@@ -10,7 +10,25 @@ module.exports = {
   organizationName: 'carleneoestergaard', // Usually your GitHub org/user name.
   projectName: 'carleneoestergaard.github.io', // Usually your repo name.
   themeConfig: {
-    navbar: {
+    
+      algolia: {
+      apiKey: 'YOUR_API_KEY',
+      indexName: 'YOUR_INDEX_NAME',
+
+      // Optional: see doc section below
+      contextualSearch: true,
+
+      // Optional: see doc section below
+      appId: 'YOUR_APP_ID',
+
+      // Optional: Algolia search parameters
+      searchParameters: {},
+
+      //... other Algolia params
+    },
+      
+      
+      navbar: {
       title: 'Alteryx Documentation',
       logo: {
         alt: 'My Site Logo',

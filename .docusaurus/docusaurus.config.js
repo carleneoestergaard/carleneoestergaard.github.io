@@ -9,6 +9,13 @@ export default {
   "organizationName": "carleneoestergaard",
   "projectName": "carleneoestergaard.github.io",
   "themeConfig": {
+    "algolia": {
+      "apiKey": "YOUR_API_KEY",
+      "indexName": "YOUR_INDEX_NAME",
+      "contextualSearch": true,
+      "appId": "YOUR_APP_ID",
+      "searchParameters": {}
+    },
     "navbar": {
       "title": "Alteryx Documentation",
       "logo": {

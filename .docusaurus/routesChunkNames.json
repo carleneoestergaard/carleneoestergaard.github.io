@@ -96,6 +96,9 @@
     "component": "f8551aab",
     "config": "5e9f5e1a"
   },
+  "/build/search-aa4": {
+    "component": "efa66bd2"
+  },
   "/build/docs-4f9": {
     "component": "1be78505",
     "versionMetadata": "935f2afb"

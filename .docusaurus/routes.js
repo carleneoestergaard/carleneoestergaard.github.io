@@ -63,6 +63,11 @@ export default [
   exact: true,
 },
 {
+  path: '/build/search',
+  component: ComponentCreator('/build/search','aa4'),
+  exact: true,
+},
+{
   path: '/build/docs',
   component: ComponentCreator('/build/docs','4f9'),
   
