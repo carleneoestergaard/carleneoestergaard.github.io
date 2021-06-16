@@ -1,5 +1,5 @@
 {
   "type": "mdx",
-  "permalink": "/markdown-page",
+  "permalink": "/build/index.html/markdown-page",
   "source": "@site/src/pages/markdown-page.md"
 }
