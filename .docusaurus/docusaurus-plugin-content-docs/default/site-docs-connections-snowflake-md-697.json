@@ -1,0 +1,23 @@
+{
+  "unversionedId": "Connections/Snowflake",
+  "id": "Connections/Snowflake",
+  "isDocsHomePage": false,
+  "title": "Snowflake",
+  "description": "Here is snowflake documentation",
+  "source": "@site/docs/Connections/Snowflake.md",
+  "sourceDirName": "Connections",
+  "slug": "/Connections/Snowflake",
+  "permalink": "/build/docs/Connections/Snowflake",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/Connections/Snowflake.md",
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Congratulations!",
+    "permalink": "/build/docs/tutorial-basics/congratulations"
+  },
+  "next": {
+    "title": "Manage Docs Versions",
+    "permalink": "/build/docs/tutorial-extras/manage-docs-versions"
+  }
+}

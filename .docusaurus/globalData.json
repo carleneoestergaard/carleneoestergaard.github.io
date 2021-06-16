@@ -11,6 +11,11 @@
           "mainDocId": "intro",
           "docs": [
             {
+              "id": "Connections/Snowflake",
+              "path": "/build/docs/Connections/Snowflake",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "intro",
               "path": "/build/docs/intro",
               "sidebar": "tutorialSidebar"

@@ -49,6 +49,18 @@
       },
       {
         "type": "category",
+        "label": "Connections",
+        "items": [
+          {
+            "type": "link",
+            "label": "Snowflake",
+            "href": "/build/docs/Connections/Snowflake"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "type": "category",
         "label": "Tutorial - Extras",
         "items": [
           {
@@ -67,6 +79,7 @@
     ]
   },
   "permalinkToSidebar": {
+    "/build/docs/Connections/Snowflake": "tutorialSidebar",
     "/build/docs/intro": "tutorialSidebar",
     "/build/docs/tutorial-basics/congratulations": "tutorialSidebar",
     "/build/docs/tutorial-basics/create-a-blog-post": "tutorialSidebar",

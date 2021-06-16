@@ -99,9 +99,13 @@
   "/build/search-aa4": {
     "component": "efa66bd2"
   },
-  "/build/docs-4f9": {
+  "/build/docs-a55": {
     "component": "1be78505",
     "versionMetadata": "935f2afb"
+  },
+  "/build/docs/Connections/Snowflake-7f7": {
+    "component": "17896441",
+    "content": "6976ba84"
   },
   "/build/docs/intro-071": {
     "component": "17896441",

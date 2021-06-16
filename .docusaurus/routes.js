@@ -69,9 +69,14 @@ export default [
 },
 {
   path: '/build/docs',
-  component: ComponentCreator('/build/docs','4f9'),
+  component: ComponentCreator('/build/docs','a55'),
   
   routes: [
+{
+  path: '/build/docs/Connections/Snowflake',
+  component: ComponentCreator('/build/docs/Connections/Snowflake','7f7'),
+  exact: true,
+},
 {
   path: '/build/docs/intro',
   component: ComponentCreator('/build/docs/intro','071'),
