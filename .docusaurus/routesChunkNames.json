@@ -1,9 +1,9 @@
 {
-  "/build/-aa2": {
+  "/build/index.html/-6a7": {
     "component": "c4f5d8e4",
     "config": "5e9f5e1a"
   },
-  "/build/blog-313": {
+  "/build/index.html/blog-fb7": {
     "component": "a6aa9e1f",
     "sidebar": "63f5ac75",
     "items": [
@@ -17,24 +17,24 @@
         "content": "8e9f0a8a"
       }
     ],
-    "metadata": "57300bb5"
+    "metadata": "7fd99f9d"
   },
-  "/build/blog/hello-world-45e": {
+  "/build/index.html/blog/hello-world-dce": {
     "component": "ccc49370",
     "sidebar": "63f5ac75",
     "content": "d610846f"
   },
-  "/build/blog/hola-e8b": {
+  "/build/index.html/blog/hola-b43": {
     "component": "ccc49370",
     "sidebar": "63f5ac75",
     "content": "bdd709f1"
   },
-  "/build/blog/tags-126": {
+  "/build/index.html/blog/tags-ecf": {
     "component": "01a85c17",
     "sidebar": "63f5ac75",
-    "tags": "7870a6bb"
+    "tags": "13a0da19"
   },
-  "/build/blog/tags/docusaurus-67b": {
+  "/build/index.html/blog/tags/docusaurus-069": {
     "component": "6875c492",
     "sidebar": "63f5ac75",
     "items": [
@@ -48,9 +48,9 @@
         "content": "8e9f0a8a"
       }
     ],
-    "metadata": "10a54ddc"
+    "metadata": "8b0e94b3"
   },
-  "/build/blog/tags/facebook-834": {
+  "/build/index.html/blog/tags/facebook-e46": {
     "component": "6875c492",
     "sidebar": "63f5ac75",
     "items": [
@@ -58,9 +58,9 @@
         "content": "af172acd"
       }
     ],
-    "metadata": "510b00ef"
+    "metadata": "28a33557"
   },
-  "/build/blog/tags/hello-15b": {
+  "/build/index.html/blog/tags/hello-b96": {
     "component": "6875c492",
     "sidebar": "63f5ac75",
     "items": [
@@ -71,9 +71,9 @@
         "content": "3570154c"
       }
     ],
-    "metadata": "8b947b8d"
+    "metadata": "6d0e57cc"
   },
-  "/build/blog/tags/hola-1f5": {
+  "/build/index.html/blog/tags/hola-257": {
     "component": "6875c492",
     "sidebar": "63f5ac75",
     "items": [
@@ -81,58 +81,58 @@
         "content": "8e9f0a8a"
       }
     ],
-    "metadata": "7db63c73"
+    "metadata": "8536dbb3"
   },
-  "/build/blog/welcome-bbd": {
+  "/build/index.html/blog/welcome-755": {
     "component": "ccc49370",
     "sidebar": "63f5ac75",
     "content": "2868cdab"
   },
-  "/build/markdown-page-d23": {
+  "/build/index.html/markdown-page-07d": {
     "component": "1f391b9e",
     "content": "393be207"
   },
-  "/build/my-react-page-d92": {
+  "/build/index.html/my-react-page-b62": {
     "component": "f8551aab",
     "config": "5e9f5e1a"
   },
-  "/build/docs-4f9": {
+  "/build/index.html/docs-eed": {
     "component": "1be78505",
     "versionMetadata": "935f2afb"
   },
-  "/build/docs/intro-071": {
+  "/build/index.html/docs/intro-739": {
     "component": "17896441",
     "content": "0e384e19"
   },
-  "/build/docs/tutorial-basics/congratulations-731": {
+  "/build/index.html/docs/tutorial-basics/congratulations-10e": {
     "component": "17896441",
     "content": "822bd8ab"
   },
-  "/build/docs/tutorial-basics/create-a-blog-post-9c7": {
+  "/build/index.html/docs/tutorial-basics/create-a-blog-post-fc9": {
     "component": "17896441",
     "content": "533a09ca"
   },
-  "/build/docs/tutorial-basics/create-a-document-b7c": {
+  "/build/index.html/docs/tutorial-basics/create-a-document-040": {
     "component": "17896441",
     "content": "1e4232ab"
   },
-  "/build/docs/tutorial-basics/create-a-page-519": {
+  "/build/index.html/docs/tutorial-basics/create-a-page-170": {
     "component": "17896441",
     "content": "5c868d36"
   },
-  "/build/docs/tutorial-basics/deploy-your-site-4cb": {
+  "/build/index.html/docs/tutorial-basics/deploy-your-site-47d": {
     "component": "17896441",
     "content": "f55d3e7a"
   },
-  "/build/docs/tutorial-basics/markdown-features-ffb": {
+  "/build/index.html/docs/tutorial-basics/markdown-features-b93": {
     "component": "17896441",
     "content": "18c41134"
   },
-  "/build/docs/tutorial-extras/manage-docs-versions-c3f": {
+  "/build/index.html/docs/tutorial-extras/manage-docs-versions-940": {
     "component": "17896441",
     "content": "dff1c289"
   },
-  "/build/docs/tutorial-extras/translate-your-site-1c7": {
+  "/build/index.html/docs/tutorial-extras/translate-your-site-fab": {
     "component": "17896441",
     "content": "e44a2883"
   }

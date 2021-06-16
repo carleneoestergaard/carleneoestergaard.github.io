@@ -2,7 +2,7 @@ export default {
   "title": "Inviso Alteryx Documetation",
   "tagline": "Alteryx rules the world!",
   "url": "https://carleneoestergaard.github.io",
-  "baseUrl": "/build/",
+  "baseUrl": "/build/index.html/",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
   "favicon": "img/favicon.ico",
