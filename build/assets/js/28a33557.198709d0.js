@@ -1,1 +1,0 @@
-(self.webpackChunkinviso=self.webpackChunkinviso||[]).push([[438],{9372:function(e){"use strict";e.exports=JSON.parse('{"allTagsPath":"/build/index.html/blog/tags","slug":"facebook","name":"facebook","count":1,"permalink":"/build/index.html/blog/tags/facebook"}')}}]);

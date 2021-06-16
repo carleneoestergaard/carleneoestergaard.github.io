@@ -3,15 +3,15 @@
   "items": [
     {
       "title": "Welcome",
-      "permalink": "/build/index.html/blog/welcome"
+      "permalink": "/build/blog/welcome"
     },
     {
       "title": "Hello",
-      "permalink": "/build/index.html/blog/hello-world"
+      "permalink": "/build/blog/hello-world"
     },
     {
       "title": "Hola",
-      "permalink": "/build/index.html/blog/hola"
+      "permalink": "/build/blog/hola"
     }
   ]
 }
