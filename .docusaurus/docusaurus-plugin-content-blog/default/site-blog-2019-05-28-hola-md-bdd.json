@@ -1,5 +1,5 @@
 {
-  "permalink": "/build/index.html/blog/hola",
+  "permalink": "/build/blog/hola",
   "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/blog/blog/2019-05-28-hola.md",
   "source": "@site/blog/2019-05-28-hola.md",
   "title": "Hola",
@@ -9,17 +9,17 @@
   "tags": [
     {
       "label": "hola",
-      "permalink": "/build/index.html/blog/tags/hola"
+      "permalink": "/build/blog/tags/hola"
     },
     {
       "label": "docusaurus",
-      "permalink": "/build/index.html/blog/tags/docusaurus"
+      "permalink": "/build/blog/tags/docusaurus"
     }
   ],
   "readingTime": 0.12,
   "truncated": false,
   "prevItem": {
     "title": "Hello",
-    "permalink": "/build/index.html/blog/hello-world"
+    "permalink": "/build/blog/hello-world"
   }
 }

@@ -1,1 +1,0 @@
-(self.webpackChunkinviso=self.webpackChunkinviso||[]).push([[947],{7671:function(e){"use strict";e.exports=JSON.parse('{"permalink":"/build/index.html/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":3,"previousPage":null,"nextPage":null,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

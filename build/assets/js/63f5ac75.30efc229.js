@@ -1,1 +1,0 @@
-(self.webpackChunkinviso=self.webpackChunkinviso||[]).push([[957],{6353:function(l){"use strict";l.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Welcome","permalink":"/build/index.html/blog/welcome"},{"title":"Hello","permalink":"/build/index.html/blog/hello-world"},{"title":"Hola","permalink":"/build/index.html/blog/hola"}]}')}}]);
