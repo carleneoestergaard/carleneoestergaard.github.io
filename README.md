@@ -1,3 +1,0 @@
-# carleneoestergaard.github.io
-
-hi
