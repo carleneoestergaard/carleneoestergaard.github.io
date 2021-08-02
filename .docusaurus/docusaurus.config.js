@@ -17,18 +17,17 @@ export default {
       "searchParameters": {}
     },
     "navbar": {
-      "title": "Alteryx Documentation",
+      "title": "Portal",
       "logo": {
         "alt": "My Site Logo",
         "src": "img/Inviso_Logo.png"
       },
       "items": [
         {
-          "type": "doc",
-          "docId": "intro",
+          "to": "/reference",
+          "label": "Reference",
           "position": "left",
-          "label": "Designer",
-          "activeSidebarClassName": "navbar__link--active"
+          "activeBaseRegex": "/reference/"
         },
         {
           "to": "/blog",
@@ -112,7 +111,13 @@ export default {
       "@docusaurus/preset-classic",
       {
         "docs": {
-          "sidebarPath": "/Users/carlenejones/GitHub/carleneoestergaard.github.io/sidebars.js",
+          "routeBasePath": "reference",
+          "path": "reference",
+          "sidebarPath": "/Users/carlenejones/GitHub/carleneoestergaard.github.io/reference/sidebars.js",
+          "lastVersion": "current",
+          "onlyIncludeVersions": [
+            "current"
+          ],
           "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/"
         },
         "blog": {

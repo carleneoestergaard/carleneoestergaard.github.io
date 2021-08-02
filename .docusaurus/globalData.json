@@ -1,63 +1,63 @@
 {
   "docusaurus-plugin-content-docs": {
     "default": {
-      "path": "/build/docs",
+      "path": "/build/reference",
       "versions": [
         {
           "name": "current",
           "label": "Next",
           "isLast": true,
-          "path": "/build/docs",
+          "path": "/build/reference",
           "mainDocId": "intro",
           "docs": [
             {
               "id": "Connections/Snowflake",
-              "path": "/build/docs/Connections/Snowflake",
+              "path": "/build/reference/Connections/Snowflake",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "intro",
-              "path": "/build/docs/intro",
+              "path": "/build/reference/intro",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "tutorial-basics/congratulations",
-              "path": "/build/docs/tutorial-basics/congratulations",
+              "path": "/build/reference/tutorial-basics/congratulations",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "tutorial-basics/create-a-blog-post",
-              "path": "/build/docs/tutorial-basics/create-a-blog-post",
+              "path": "/build/reference/tutorial-basics/create-a-blog-post",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "tutorial-basics/create-a-document",
-              "path": "/build/docs/tutorial-basics/create-a-document",
+              "path": "/build/reference/tutorial-basics/create-a-document",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "tutorial-basics/create-a-page",
-              "path": "/build/docs/tutorial-basics/create-a-page",
+              "path": "/build/reference/tutorial-basics/create-a-page",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "tutorial-basics/deploy-your-site",
-              "path": "/build/docs/tutorial-basics/deploy-your-site",
+              "path": "/build/reference/tutorial-basics/deploy-your-site",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "tutorial-basics/markdown-features",
-              "path": "/build/docs/tutorial-basics/markdown-features",
+              "path": "/build/reference/tutorial-basics/markdown-features",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "tutorial-extras/manage-docs-versions",
-              "path": "/build/docs/tutorial-extras/manage-docs-versions",
+              "path": "/build/reference/tutorial-extras/manage-docs-versions",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "tutorial-extras/translate-your-site",
-              "path": "/build/docs/tutorial-extras/translate-your-site",
+              "path": "/build/reference/tutorial-extras/translate-your-site",
               "sidebar": "tutorialSidebar"
             }
           ]

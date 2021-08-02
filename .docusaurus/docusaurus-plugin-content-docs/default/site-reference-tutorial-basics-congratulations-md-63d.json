@@ -1,0 +1,26 @@
+{
+  "unversionedId": "tutorial-basics/congratulations",
+  "id": "tutorial-basics/congratulations",
+  "isDocsHomePage": false,
+  "title": "Congratulations!",
+  "description": "You have just learned the basics of Docusaurus and made some changes to the initial template.",
+  "source": "@site/reference/tutorial-basics/congratulations.md",
+  "sourceDirName": "tutorial-basics",
+  "slug": "/tutorial-basics/congratulations",
+  "permalink": "/build/reference/tutorial-basics/congratulations",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/reference/tutorial-basics/congratulations.md",
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Deploy your site",
+    "permalink": "/build/reference/tutorial-basics/deploy-your-site"
+  },
+  "next": {
+    "title": "Snowflake",
+    "permalink": "/build/reference/Connections/Snowflake"
+  }
+}

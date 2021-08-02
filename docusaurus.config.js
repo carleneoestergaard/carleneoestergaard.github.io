@@ -29,18 +29,14 @@ module.exports = {
       
       
       navbar: {
-      title: 'Alteryx Documentation',
+      title: 'Portal',
       logo: {
         alt: 'My Site Logo',
         src: 'img/Inviso_Logo.png',
       },
       items: [
-        {
-          type: 'doc',
-          docId: 'intro',
-          position: 'left',
-          label: 'Designer',
-        },
+       
+        {to: '/reference', label: 'Reference', position: 'left',activeBaseRegex: '/reference/',},
         {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/carleneoestergaard/inviso-alteryx',
@@ -100,8 +96,12 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+            routeBasePath: 'reference',
+            path: 'reference',
+          sidebarPath: require.resolve('./reference/sidebars.js'),
           // Please change this to your repo.
+             lastVersion: 'current',
+          onlyIncludeVersions: ['current'],
           editUrl:
             'https://github.com/facebook/docusaurus/edit/master/website/',
         },

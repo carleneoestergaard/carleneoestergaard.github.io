@@ -121,48 +121,48 @@
   "/build/search-aa4": {
     "component": "component---users-carlenejones-git-hub-carleneoestergaard-github-io-node-modules-docusaurus-theme-search-algolia-src-theme-search-page-index-jsefa-0b2"
   },
-  "/build/docs-a55": {
+  "/build/reference-900": {
     "component": "component---theme-doc-page-1-be-9be",
-    "versionMetadata": "versionMetadata---build-docs-935-843"
+    "versionMetadata": "versionMetadata---build-reference-935-49d"
   },
-  "/build/docs/Connections/Snowflake-7f7": {
+  "/build/reference/Connections/Snowflake-075": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---build-docs-connections-snowflake-697-922"
+    "content": "content---build-reference-connections-snowflake-812-851"
   },
-  "/build/docs/intro-071": {
+  "/build/reference/intro-6a1": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---build-docs-intro-0-e-3-7bb"
+    "content": "content---build-reference-intro-625-caf"
   },
-  "/build/docs/tutorial-basics/congratulations-731": {
+  "/build/reference/tutorial-basics/congratulations-0ec": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---build-docs-tutorial-basics-congratulations-822-663"
+    "content": "content---build-reference-tutorial-basics-congratulations-63-d-62a"
   },
-  "/build/docs/tutorial-basics/create-a-blog-post-9c7": {
+  "/build/reference/tutorial-basics/create-a-blog-post-eef": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---build-docs-tutorial-basics-create-a-blog-post-533-c10"
+    "content": "content---build-reference-tutorial-basics-create-a-blog-postb-86-afe"
   },
-  "/build/docs/tutorial-basics/create-a-document-b7c": {
+  "/build/reference/tutorial-basics/create-a-document-f19": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---build-docs-tutorial-basics-create-a-document-1-e-4-ebe"
+    "content": "content---build-reference-tutorial-basics-create-a-document-214-c66"
   },
-  "/build/docs/tutorial-basics/create-a-page-519": {
+  "/build/reference/tutorial-basics/create-a-page-32d": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---build-docs-tutorial-basics-create-a-page-5-c-8-f9c"
+    "content": "content---build-reference-tutorial-basics-create-a-page-23-b-bf5"
   },
-  "/build/docs/tutorial-basics/deploy-your-site-4cb": {
+  "/build/reference/tutorial-basics/deploy-your-site-f00": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---build-docs-tutorial-basics-deploy-your-sitef-55-549"
+    "content": "content---build-reference-tutorial-basics-deploy-your-site-89-e-5ca"
   },
-  "/build/docs/tutorial-basics/markdown-features-ffb": {
+  "/build/reference/tutorial-basics/markdown-features-aad": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---build-docs-tutorial-basics-markdown-features-18-c-ce8"
+    "content": "content---build-reference-tutorial-basics-markdown-featuresc-49-5a2"
   },
-  "/build/docs/tutorial-extras/manage-docs-versions-c3f": {
+  "/build/reference/tutorial-extras/manage-docs-versions-203": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---build-docs-tutorial-extras-manage-docs-versionsdff-51f"
+    "content": "content---build-reference-tutorial-extras-manage-docs-versions-53-e-8e5"
   },
-  "/build/docs/tutorial-extras/translate-your-site-1c7": {
+  "/build/reference/tutorial-extras/translate-your-site-13e": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---build-docs-tutorial-extras-translate-your-sitee-44-d46"
+    "content": "content---build-reference-tutorial-extras-translate-your-site-7-cd-853"
   }
 }

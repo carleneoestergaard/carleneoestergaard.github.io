@@ -8,7 +8,7 @@
       {
         "type": "link",
         "label": "Tutorial Intro",
-        "href": "/build/docs/intro"
+        "href": "/build/reference/intro"
       },
       {
         "type": "category",
@@ -17,32 +17,32 @@
           {
             "type": "link",
             "label": "Create a Page",
-            "href": "/build/docs/tutorial-basics/create-a-page"
+            "href": "/build/reference/tutorial-basics/create-a-page"
           },
           {
             "type": "link",
             "label": "Create a Document",
-            "href": "/build/docs/tutorial-basics/create-a-document"
+            "href": "/build/reference/tutorial-basics/create-a-document"
           },
           {
             "type": "link",
             "label": "Create a Blog Post",
-            "href": "/build/docs/tutorial-basics/create-a-blog-post"
+            "href": "/build/reference/tutorial-basics/create-a-blog-post"
           },
           {
             "type": "link",
             "label": "Markdown Features",
-            "href": "/build/docs/tutorial-basics/markdown-features"
+            "href": "/build/reference/tutorial-basics/markdown-features"
           },
           {
             "type": "link",
             "label": "Deploy your site",
-            "href": "/build/docs/tutorial-basics/deploy-your-site"
+            "href": "/build/reference/tutorial-basics/deploy-your-site"
           },
           {
             "type": "link",
             "label": "Congratulations!",
-            "href": "/build/docs/tutorial-basics/congratulations"
+            "href": "/build/reference/tutorial-basics/congratulations"
           }
         ],
         "collapsed": true
@@ -54,7 +54,7 @@
           {
             "type": "link",
             "label": "Snowflake",
-            "href": "/build/docs/Connections/Snowflake"
+            "href": "/build/reference/Connections/Snowflake"
           }
         ],
         "collapsed": true
@@ -66,12 +66,12 @@
           {
             "type": "link",
             "label": "Manage Docs Versions",
-            "href": "/build/docs/tutorial-extras/manage-docs-versions"
+            "href": "/build/reference/tutorial-extras/manage-docs-versions"
           },
           {
             "type": "link",
             "label": "Translate your site",
-            "href": "/build/docs/tutorial-extras/translate-your-site"
+            "href": "/build/reference/tutorial-extras/translate-your-site"
           }
         ],
         "collapsed": true
@@ -79,15 +79,15 @@
     ]
   },
   "permalinkToSidebar": {
-    "/build/docs/Connections/Snowflake": "tutorialSidebar",
-    "/build/docs/intro": "tutorialSidebar",
-    "/build/docs/tutorial-basics/congratulations": "tutorialSidebar",
-    "/build/docs/tutorial-basics/create-a-blog-post": "tutorialSidebar",
-    "/build/docs/tutorial-basics/create-a-document": "tutorialSidebar",
-    "/build/docs/tutorial-basics/create-a-page": "tutorialSidebar",
-    "/build/docs/tutorial-basics/deploy-your-site": "tutorialSidebar",
-    "/build/docs/tutorial-basics/markdown-features": "tutorialSidebar",
-    "/build/docs/tutorial-extras/manage-docs-versions": "tutorialSidebar",
-    "/build/docs/tutorial-extras/translate-your-site": "tutorialSidebar"
+    "/build/reference/Connections/Snowflake": "tutorialSidebar",
+    "/build/reference/intro": "tutorialSidebar",
+    "/build/reference/tutorial-basics/congratulations": "tutorialSidebar",
+    "/build/reference/tutorial-basics/create-a-blog-post": "tutorialSidebar",
+    "/build/reference/tutorial-basics/create-a-document": "tutorialSidebar",
+    "/build/reference/tutorial-basics/create-a-page": "tutorialSidebar",
+    "/build/reference/tutorial-basics/deploy-your-site": "tutorialSidebar",
+    "/build/reference/tutorial-basics/markdown-features": "tutorialSidebar",
+    "/build/reference/tutorial-extras/manage-docs-versions": "tutorialSidebar",
+    "/build/reference/tutorial-extras/translate-your-site": "tutorialSidebar"
   }
 }
