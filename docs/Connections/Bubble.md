@@ -4,7 +4,7 @@ Connecting to Bubblie.io is a fairly straightfoward API with an API auth token.
 
 ## Macro
 
-[Download the macro here](./assets/bubble/Bubble_api_loader.yxmc.zip)
+[Download the macro here](https://drive.google.com/file/d/1Ijxi-7AWHx8nA4VZ1YhcuwyX_0w3xe3X/view?usp=sharing)
 
 
 Bubble.io's api maxes out at 100 rows, meaning we need an interative macro to ensure we are looping through all of the records. 
