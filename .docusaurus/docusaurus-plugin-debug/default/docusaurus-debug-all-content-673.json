@@ -57,6 +57,14 @@
                 "items": [
                   {
                     "type": "doc",
+                    "id": "Connections/Bubble"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Connections/Maconomy"
+                  },
+                  {
+                    "type": "doc",
                     "id": "Connections/Snowflake"
                   }
                 ],
@@ -80,6 +88,8 @@
             ]
           },
           "permalinkToSidebar": {
+            "/build/docs/Connections/Bubble": "tutorialSidebar",
+            "/build/docs/Connections/Maconomy": "tutorialSidebar",
             "/build/docs/Connections/Snowflake": "tutorialSidebar",
             "/build/docs/intro": "tutorialSidebar",
             "/build/docs/tutorial-basics/congratulations": "tutorialSidebar",
@@ -92,6 +102,52 @@
             "/build/docs/tutorial-extras/translate-your-site": "tutorialSidebar"
           },
           "docs": [
+            {
+              "unversionedId": "Connections/Bubble",
+              "id": "Connections/Bubble",
+              "isDocsHomePage": false,
+              "title": "Bubble",
+              "description": "Connecting to Bubblie.io is a fairly straightfoward API with API keys.",
+              "source": "@site/docs/Connections/Bubble.md",
+              "sourceDirName": "Connections",
+              "slug": "/Connections/Bubble",
+              "permalink": "/build/docs/Connections/Bubble",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/Connections/Bubble.md",
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Congratulations!",
+                "permalink": "/build/docs/tutorial-basics/congratulations"
+              },
+              "next": {
+                "title": "Maconomy",
+                "permalink": "/build/docs/Connections/Maconomy"
+              }
+            },
+            {
+              "unversionedId": "Connections/Maconomy",
+              "id": "Connections/Maconomy",
+              "isDocsHomePage": false,
+              "title": "Maconomy",
+              "description": "",
+              "source": "@site/docs/Connections/Maconomy.md",
+              "sourceDirName": "Connections",
+              "slug": "/Connections/Maconomy",
+              "permalink": "/build/docs/Connections/Maconomy",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/Connections/Maconomy.md",
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Bubble",
+                "permalink": "/build/docs/Connections/Bubble"
+              },
+              "next": {
+                "title": "Snowflake",
+                "permalink": "/build/docs/Connections/Snowflake"
+              }
+            },
             {
               "unversionedId": "Connections/Snowflake",
               "id": "Connections/Snowflake",
@@ -107,8 +163,8 @@
               "frontMatter": {},
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Congratulations!",
-                "permalink": "/build/docs/tutorial-basics/congratulations"
+                "title": "Maconomy",
+                "permalink": "/build/docs/Connections/Maconomy"
               },
               "next": {
                 "title": "Manage Docs Versions",
@@ -159,8 +215,8 @@
                 "permalink": "/build/docs/tutorial-basics/deploy-your-site"
               },
               "next": {
-                "title": "Snowflake",
-                "permalink": "/build/docs/Connections/Snowflake"
+                "title": "Bubble",
+                "permalink": "/build/docs/Connections/Bubble"
               }
             },
             {

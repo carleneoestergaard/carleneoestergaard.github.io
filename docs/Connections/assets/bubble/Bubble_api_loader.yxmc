@@ -1,0 +1,850 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
+        <Position x="366" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <URLField>url</URLField>
+          <OutputMode>String</OutputMode>
+          <CodePage>65001</CodePage>
+          <EncodeURLs value="True" />
+          <Headers>
+            <NameValues>
+              <Item name="Authorization" value="Bearer 884e7cab9b4c3c2b72a43ac939738b19" />
+            </NameValues>
+            <Fields orderChanged="False">
+              <Field name="baseurl" selected="False" />
+              <Field name="cursor" selected="False" />
+              <Field name="url" selected="False" />
+              <Field name="*Unknown" selected="False" />
+            </Fields>
+          </Headers>
+          <Payload>
+            <HTTPAction>GET</HTTPAction>
+            <QueryStringBodyMode>Compose</QueryStringBodyMode>
+            <ComposeNameValues />
+            <ComposeFields orderChanged="False">
+              <Field name="baseurl" selected="False" />
+              <Field name="cursor" selected="False" />
+              <Field name="url" selected="False" />
+              <Field name="*Unknown" selected="False" />
+            </ComposeFields>
+          </Payload>
+          <UserName />
+          <Password />
+          <numConnections>2</numConnections>
+          <Timeout>600</Timeout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="baseurl" size="44" source="TextInput:" type="String" />
+            <Field name="cursor" source="TextInput:" type="Double" />
+            <Field name="url" size="5000" source="Formula: [baseurl] + '?cursor=' + ToString([cursor])" type="V_WString" />
+            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxDownload" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="66" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="baseurl" />
+          </Fields>
+          <Data>
+            <r>
+              <c>https://certified.inviso.dk/api/1.1/obj/exam</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="baseurl" size="44" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.JSONParse.JSONParse">
+        <Position x="462" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <JSON_Field>DownloadData</JSON_Field>
+          <IncludeInOutput value="False" />
+          <SingleField value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="baseurl" size="44" source="TextInput:" type="String" />
+            <Field name="cursor" source="TextInput:" type="Double" />
+            <Field name="url" size="5000" source="Formula: [baseurl] + '?cursor=' + ToString([cursor])" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJSONParse" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="558" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>JSON_Name</Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>JSON_Name</RootName>
+          <Delimeters value="." />
+          <NumFields value="4" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="baseurl" size="44" source="TextInput:" type="String" />
+            <Field name="cursor" source="TextInput:" type="Double" />
+            <Field name="url" size="5000" source="Formula: [baseurl] + '?cursor=' + ToString([cursor])" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name1" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+            <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name2" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+            <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name3" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+            <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name4" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="654" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotNull</Operator>
+            <Field>JSON_Name3</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2021-07-09 08:26:22</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2021-07-09 08:26:22</StartDate>
+              <EndDate>2021-07-09 08:26:22</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsNull([JSON_Name3])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="baseurl" size="44" source="TextInput:" type="String" />
+            <Field name="cursor" source="TextInput:" type="Double" />
+            <Field name="url" size="5000" source="Formula: [baseurl] + '?cursor=' + ToString([cursor])" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name1" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+            <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name2" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+            <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name3" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+            <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name4" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="baseurl" size="44" source="TextInput:" type="String" />
+            <Field name="cursor" source="TextInput:" type="Double" />
+            <Field name="url" size="5000" source="Formula: [baseurl] + '?cursor=' + ToString([cursor])" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name1" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+            <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name2" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+            <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name3" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+            <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name4" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="750" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="JSON_Name3" />
+          </GroupFields>
+          <HeaderField field="JSON_Name4" />
+          <DataField field="JSON_ValueString" />
+          <Methods>
+            <Method method="Concat" />
+            <Separator>,</Separator>
+            <FieldSize value="2048" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name3" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+            <Field name="_id" size="2048" source="CrossTab:Header:JSON_Name4:_id:Concat:" type="V_WString" />
+            <Field name="_type" size="2048" source="CrossTab:Header:JSON_Name4:_type:Concat:" type="V_WString" />
+            <Field name="certificate_file" size="2048" source="CrossTab:Header:JSON_Name4:certificate_file:Concat:" type="V_WString" />
+            <Field name="certification_custom_certification" size="2048" source="CrossTab:Header:JSON_Name4:certification_custom_certification:Concat:" type="V_WString" />
+            <Field name="completed_text" size="2048" source="CrossTab:Header:JSON_Name4:completed_text:Concat:" type="V_WString" />
+            <Field name="Created_By" size="2048" source="CrossTab:Header:JSON_Name4:Created By:Concat:" type="V_WString" />
+            <Field name="Created_Date" size="2048" source="CrossTab:Header:JSON_Name4:Created Date:Concat:" type="V_WString" />
+            <Field name="date_expiry_date" size="2048" source="CrossTab:Header:JSON_Name4:date_expiry_date:Concat:" type="V_WString" />
+            <Field name="date_renewal_date" size="2048" source="CrossTab:Header:JSON_Name4:date_renewal_date:Concat:" type="V_WString" />
+            <Field name="deadline_date" size="2048" source="CrossTab:Header:JSON_Name4:deadline_date:Concat:" type="V_WString" />
+            <Field name="Modified_Date" size="2048" source="CrossTab:Header:JSON_Name4:Modified Date:Concat:" type="V_WString" />
+            <Field name="user_user" size="2048" source="CrossTab:Header:JSON_Name4:user_user:Concat:" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="JSON_Name3" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="750" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields />
+          <HeaderField field="JSON_Name2" />
+          <DataField field="JSON_ValueString" />
+          <Methods>
+            <Method method="Concat" />
+            <Separator>,</Separator>
+            <FieldSize value="2048" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="count" size="2048" source="CrossTab:Header:JSON_Name2:count:Concat:" type="V_WString" />
+            <Field name="cursor" size="2048" source="CrossTab:Header:JSON_Name2:cursor:Concat:" type="V_WString" />
+            <Field name="remaining" size="2048" source="CrossTab:Header:JSON_Name2:remaining:Concat:" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="270" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[baseurl] + '?cursor=' + ToString([cursor])" field="url" size="5000" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[url = [baseurl] + '?cursor=' + ToString([cursor])
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="baseurl" size="44" source="TextInput:" type="String" />
+            <Field name="cursor" source="TextInput:" type="Double" />
+            <Field name="url" size="5000" source="Formula: [baseurl] + '?cursor=' + ToString([cursor])" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="942" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>remaining</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2021-07-09 08:30:51</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>0</Operand>
+              <StartDate>2021-07-09 08:30:51</StartDate>
+              <EndDate>2021-07-09 08:30:51</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[remaining] = "0"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="count" source="CrossTab:Header:JSON_Name2:count:Concat:" type="Double" />
+            <Field name="cursor" source="CrossTab:Header:JSON_Name2:cursor:Concat:" type="Double" />
+            <Field name="remaining" source="CrossTab:Header:JSON_Name2:remaining:Concat:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="count" source="CrossTab:Header:JSON_Name2:count:Concat:" type="Double" />
+            <Field name="cursor" source="CrossTab:Header:JSON_Name2:cursor:Concat:" type="Double" />
+            <Field name="remaining" source="CrossTab:Header:JSON_Name2:remaining:Concat:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1038" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output11</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1038" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[cursor] + 100" field="cursor" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[cursor = [cursor] + 100
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="count" source="CrossTab:Header:JSON_Name2:count:Concat:" type="Double" />
+            <Field name="cursor" source="Formula: [cursor] + 100" type="Double" />
+            <Field name="remaining" source="CrossTab:Header:JSON_Name2:remaining:Concat:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="846" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="count" selected="True" type="Double" size="8" />
+            <SelectField field="cursor" selected="True" type="Double" size="8" />
+            <SelectField field="remaining" selected="True" type="Double" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="count" source="CrossTab:Header:JSON_Name2:count:Concat:" type="Double" />
+            <Field name="cursor" source="CrossTab:Header:JSON_Name2:cursor:Concat:" type="Double" />
+            <Field name="remaining" source="CrossTab:Header:JSON_Name2:remaining:Concat:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1134" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Iterative Output</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="78" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Iterative Input</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="cursor" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>0</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Input</DefaultAnnotationText>
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="cursor" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="162" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Source_cursor" selected="True" input="Source_" type="Double" size="8" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="baseurl" size="44" source="TextInput:" type="String" />
+            <Field name="cursor" source="TextInput:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+        <Position x="54" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Text Box (19)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="66" y="138" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="846" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="JSON_Name3" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="_id" size="2048" source="CrossTab:Header:JSON_Name4:_id:Concat:" type="V_WString" />
+            <Field name="_type" size="2048" source="CrossTab:Header:JSON_Name4:_type:Concat:" type="V_WString" />
+            <Field name="certificate_file" size="2048" source="CrossTab:Header:JSON_Name4:certificate_file:Concat:" type="V_WString" />
+            <Field name="certification_custom_certification" size="2048" source="CrossTab:Header:JSON_Name4:certification_custom_certification:Concat:" type="V_WString" />
+            <Field name="completed_text" size="2048" source="CrossTab:Header:JSON_Name4:completed_text:Concat:" type="V_WString" />
+            <Field name="Created_By" size="2048" source="CrossTab:Header:JSON_Name4:Created By:Concat:" type="V_WString" />
+            <Field name="Created_Date" size="2048" source="CrossTab:Header:JSON_Name4:Created Date:Concat:" type="V_WString" />
+            <Field name="date_expiry_date" size="2048" source="CrossTab:Header:JSON_Name4:date_expiry_date:Concat:" type="V_WString" />
+            <Field name="date_renewal_date" size="2048" source="CrossTab:Header:JSON_Name4:date_renewal_date:Concat:" type="V_WString" />
+            <Field name="deadline_date" size="2048" source="CrossTab:Header:JSON_Name4:deadline_date:Concat:" type="V_WString" />
+            <Field name="Modified_Date" size="2048" source="CrossTab:Header:JSON_Name4:Modified Date:Concat:" type="V_WString" />
+            <Field name="user_user" size="2048" source="CrossTab:Header:JSON_Name4:user_user:Concat:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+        <Position x="942" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RenameMode>Remove</RenameMode>
+          <Fields orderChanged="False">
+            <Field name="_id" />
+            <Field name="_type" />
+            <Field name="certificate_file" />
+            <Field name="certification_custom_certification" />
+            <Field name="completed_text" />
+            <Field name="Created_By" />
+            <Field name="Created_Date" />
+            <Field name="date_expiry_date" />
+            <Field name="date_renewal_date" />
+            <Field name="deadline_date" />
+            <Field name="Modified_Date" />
+            <Field name="user_user" />
+            <Field name="*Unknown" />
+          </Fields>
+          <Expression />
+          <RemovePrefixSuffix>
+            <Type>Prefix</Type>
+            <Text>_</Text>
+            <OnError>Ignore</OnError>
+          </RemovePrefixSuffix>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="id" size="2048" source="CrossTab:Header:JSON_Name4:_id:Concat:" type="V_WString" />
+            <Field name="type" size="2048" source="CrossTab:Header:JSON_Name4:_type:Concat:" type="V_WString" />
+            <Field name="certificate_file" size="2048" source="CrossTab:Header:JSON_Name4:certificate_file:Concat:" type="V_WString" />
+            <Field name="certification_custom_certification" size="2048" source="CrossTab:Header:JSON_Name4:certification_custom_certification:Concat:" type="V_WString" />
+            <Field name="completed_text" size="2048" source="CrossTab:Header:JSON_Name4:completed_text:Concat:" type="V_WString" />
+            <Field name="Created_By" size="2048" source="CrossTab:Header:JSON_Name4:Created By:Concat:" type="V_WString" />
+            <Field name="Created_Date" size="2048" source="CrossTab:Header:JSON_Name4:Created Date:Concat:" type="V_WString" />
+            <Field name="date_expiry_date" size="2048" source="CrossTab:Header:JSON_Name4:date_expiry_date:Concat:" type="V_WString" />
+            <Field name="date_renewal_date" size="2048" source="CrossTab:Header:JSON_Name4:date_renewal_date:Concat:" type="V_WString" />
+            <Field name="deadline_date" size="2048" source="CrossTab:Header:JSON_Name4:deadline_date:Concat:" type="V_WString" />
+            <Field name="Modified_Date" size="2048" source="CrossTab:Header:JSON_Name4:Modified Date:Concat:" type="V_WString" />
+            <Field name="user_user" size="2048" source="CrossTab:Header:JSON_Name4:user_user:Concat:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="16" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="True" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="False" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="1" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="False" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="19" Connection="Question" />
+      <Destination ToolID="20" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="20" Connection="Action" />
+      <Destination ToolID="2" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Text Box (19)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Bubble api loader</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="20" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>exam</ReplaceText>
+              <Destination>2/Data/r/c</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (10)</Name>
+          <ToolId value="10" />
+          <Questions>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (11)</Description>
+              <Name>Macro Output (11)</Name>
+              <ToolId value="11" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (14)</Description>
+              <Name>Macro Output (14)</Name>
+              <ToolId value="14" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Macro Input (15)</Description>
+              <Name>Macro Input (15)</Name>
+              <ToolId value="15" />
+            </Question>
+            <Question>
+              <Type>TextBox</Type>
+              <Description>Enter table name</Description>
+              <Name>Text Box (19)</Name>
+              <ToolId value="19" />
+              <Default />
+              <Password value="False" />
+              <Multiline value="False" />
+              <Hidden value="False" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImage>iVBORw0KGgoAAAANSUhEUgAAAKsAAACrCAYAAAAZ6GwZAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwQAADsEBuJFr7QAAEE9JREFUeF7tnQmQHVUVhrOwGYgsBYQozmTevOS9jEmwGJBVYqCUpURkSQCBAiWIuGAJRAggqCwJyqJosQhBERFCsVQhCKJUJSAFllJssiVhD1tCKDAEAkl6/M7kUE46N8nMdPfte987X9VfPUkm75x77v9ub7dvDwiFarW64ciRI28sWIdpOMPoP+PGjdt41KhRCeoqUOdpOMPoP2ZWIxrMrEY0mFmNaDCzGtFgZjWiwcxqRIOZ1YgGM6sRDWZWIxrMrEY0mFmNaDCzGtFgZjWiwcxqRIOZ1YgGM6sRDWZWIxrMrEY0mFmNaDCzGtFgZjWiwcxqRIOZ1YgGM6sRDWZWIxrMrEY0mFmNaDCzGtFgZjWiwcxqRIOZ1YgGM6sRDWZWIxrMrEY0mFmNaDCzGtFgZjWiwcxqRIOZ1YgGM6sRDWZWIxrMrEY0NKtZx48fvx55bdne3v5ZtnvWarWJbCePHDnyRLY/6qGT0AnoKHQA2n306NEjW1tbN+NjBq/8NMMLTWDWgdVqdSvMuDd5nIoZ/4j+jRby5+U9cuyT+P8fsV0gn8X2BnQ2Px9ErPbOzs71NbaRJ41oVuJtiSahK9FTmGgZW1deRelNdCdxp/Il2VXePK6pGVloFLOya24ljuyy79NRz5VHKSKft9nejGm/wXZLTdnoKzGbtaOjYxNGLjHAbLSiR7xgpV+ku9keTe5DtSlGb4jRrHxeHV2K3tHPj1IYdjGagXbSphlrIyazSqfyWbeifp8YBSqp/0O073A7OVsLMZi1Xq938hl/RlHs6jNqLppsJ2UOQjZrpVJpYbS5jv/v+2w+BIlpj5LrwVoOI0Sztra2boRJp6L/Oj6rqUQN/sWeZbyWprkJzazt7e270EGPOz6jmbVC9jAdHR3baJmak1DMKsdodMg01Iy7/F6J2ryFjqFcA1dWrckIwazs5kbRCXLb0vV/Tavr9qYcZcs2K/92KHq3x++aeqc30L5axuagLLPKWW6tVruAfys6dsOKvZFcbz63aa4YlGFWuc1IoW93/J6pf7qTw4IttLyNi2+zyrEWf7bj0/z1pExP1DI3Jj7NyraNEfXp1L+ZchK1fZ3tjt0d24j4Miu7/hrbl1J/b8pf71DqCdq9jYUPs/KNv4ntK+m/NxWmJfV6/cvaxY2Dp5HV5FkMEEvY7qXd3BiYWRtXGHYxI+wu2tXxY2ZtbGHYhdVqtUO7O27MrE2heW1tbcO0y+Ol2c3KyPMhkgf65qM5/PwE2/+g59Cb/FmmKTbCpO/ZMvVSuz1OmsisH6BHMN9V6MRarba3TKCRxSo6Ojo20HKkGbjtttt+olKpbN3e3r49/0cWwjgL3cJnyGW4qExMzpdpu+Kkgc2a0DnPoov5eR9dQSVPBvG5bfJ4NTFm8rOMzq48QlLCF+4IzT8+GtCs8zHPBWg7mudt3ufw4cOHEFuWF7oZySjuyi0EyU2DmqYdFw1iVhlF76cPDl7LLt0bMv+BXM4kL5nG58q3bD0Y5Uyt2M2KSe9Fe2hzgkKOd8nxu0hO3pz5lyVqNlXTjIdYzUqxn+B4UW4pBv+Ih9SYfM9Ai11tKUnvk89oTTEOYjMrBX4PTQlhd99X9NHy21ztKkPkci9pDVqZXQTEZFaK+49oTw7+z0DaciRtWZRuX0k6VPMKn0jMupzOnRbjaLomaFMberBHG0sRdX2+s7NziKYVNhGY9V0KepCm21DoYh5X0cZS608OJ2tKYRO4WefX6/XtNdVGRQ4LTkWl3Q3DrAs5nt5U8wmXgM06t+GfKeqB3AmjzaWtjohhT9dUwiVQsz43YsSIVk2xaaDd8pKNsgz7BucEm2gqYRKaWfmGv0rRqppe00EN5M0wZR0SnKBphElIZsWoMrO9U1NrWqjFuenaeNKThB+8MosACcisy2u12kRNq9kZxBe3rJsHe2oO4RGKWemcizQlA8aOHbs5NZnjqlXB+pOmEB6BmPXhRrrgnxeYdSfk9TVJxFvc0tKyuaYQFgGYVeZ+jtN0jBTU5rwetfIiDHu0hg+LAMy6xuUwjQED5FYo5nnWUbcidYeGD4uSzfrysGHDNtZUjDVQrVb3p1be+ogvx5ICHgPKTplmpSiy5LixbuSW7Kx0/YoUfXOgxg6HssxKMZ6xk6reQ72+QN189tPlGjocSjTrcZqC0TtkdL0vXceiRP88q3HDoSSzLohmDmVAcOx6sKOWRWlFvV4frqHDoAyz8q29WMMbfQCzyuuXXnPVtCB9TUOHQRlmldVNNLzRRzDrRa6aFqSwLiuWYNanCBvPQ2qBwei6s6OmRSms660lmPVCDW30A1mcgtH1VUddcxdxXiBkOI+6+zYrI0PjLR/uGUwkbwp31jdnLQ3qcRfPZv0gimd9AgezHueobSGq1+tjNGz5eDbroxrWyABm3c5R20JErP00bPl4Nuu1GtbIgPQZJpIXXLhqnKtkFNew5ePTrDQ8/CcoI4FaPuOqcd4izpkasnx8mpXjn8M1rJERTHSXq8Z5iziXaMjy8WnWWq32RQ1rZIR6XpOubxHCrFdryPLxfMxqTwTkBLW8MFXbohTOM1mej1krGtbICLX8mavGBegWDVk+ng8DRmhYIyOY9QxXjQtQc5rVRtb8oJY/cdW4AIVjVll2kYTsmDUyqGXzHbMKfEu9PJterVbHa0gjI/TZ1a4a5y3izNCQYUBCb7kSzVvEOUxDGhmhnnem61uE6LOwJsqTkJe7IehUDWlkhFo+maptIcIbYd11JKnZ6SSLEA2/RkMaGZD3a1FLX68pmqxhw4CErk8lWJQe1pBGBmTaHrX0clJMrLDmH5OUr/WUltRqtaEa1ugn1FCWdHfVN3cRK6xXObFLOcaVaBGi7TY/ICPU8XfpuhYhfPFecEu3k9ROrmQLki3EloGJEycOpr9edNQ1dxHnaQ0bDrJwLcktTSdbhCjAY4S0p1v7iTzG7qprEaKvZmrYoJClabxcCkHyuvW4XnAbENRumqOmRek0DRsWJOZlfqTqfA1r9AF9DPsFRz0LUbDnFyR3bDrZokTBX5WlcDS00Uuo2Vdc9SxIS2WSk4YOC46FqiToa0KL6EgNbfQOOVS7J1XDwsSAcr/GDROSnJdOukA9Krs1DW2sA+q1I/L5MrezNHSYkOClqYSL1iQNbawDanVHqnaFiuPVHTR0mJDkXumkixS7mjkyn1bDG2uAWkm/eDtEo19eDH6vJyc9JPq6qwEFKszLI4EgfUKNHk3VrFDhgV9q+LAh0ctcDShKxFtcqVRGangjBTU6NV2zgpXwBdlZw4eNJCoJpxpQtGbLbURNwVA4bhxLbeSldq6aFSVZPzecZS7XwUBGu8ccjShaP9b4Bsg1zjL6gZhTNIU4IGl5572zMUWJIi1jJNlbU2h6qMm16Rp50HvsWbfSFOKAhD+Jebw8l9VTxFzEtq5pNC3U4ZR0bXyIuOEsFdQXSP78dGM8aR5F+7Sm0XTQ9sPRMkddCpXEDGrh4L5A4sNpgK/nfFYRcR+vVCpbaypNA4dBX6X9XqZqOnSrphEnmMbna2zSepT4TTPC0tYDabPvM/+PtVzmyWoqcSKjGw15N9Uwn5rDCD9K02lYaOdkzOploRGXiH2jphI3NMTXAmBr0gJ2jxM0nYZC56dOp40+J6ik9UHDDAh6ve95RyO9ifgfolNIp2Eeh9G91t3ptpagX2hKjQFGOcjRyDJ0J6PspzStaKEd+1JTLy9eW4fmy2VKTStPki3QPogRJrkUXYeuR1egs9Ak1Ka/nDdyV+t2R2O9izwWoWPIKbpRlvy3JPcZbH3fznYp4Yt/iKaWB12bYMBj2c5i+yHbrrUrWYGeQmLez+iH5AK7rRYxiqPRpYhc7me7o6YXNB0dHRtgjOPJd0HPNpSsm0ktjzkAyYboB+h1tyl7o+QDdBkaph+aGQxytKPRpYl8lqOZGGGsphgUegJ1GLk+lc69ZL3R1taWhy+ScegRtwH7o2QBOlQ/PCtyOHCjo/GlipyWodv0qkHps7fkOBB9m9xCM6loOTpAU81CcjBa7DZdFnUfHnDW15W5I9mlbUFjfT6r1Vc9gWmnjBgxopV0vU11k1GU2LuhK/jivN0jn6BEbnm81yo5Ai1b3Wh5KrmKbWbD1uv1Thr+froQIUlH2wfQ6Zh3h87OzvU1/dxoaWnZnM/enxgyYf2ldA6hSerBiJ/1EfhkT9SLE6g8lPxUg2aChsvxawhntb0S+cpo9ze20zHY1+ULJ3sJmiJXFdY2Ag8Uo/O7LXKYwWd8B12JHuGzSrvr1A+9Qr5Zb1/LCVDymttYRaj7kCCXNTdp/AWOokQl2vAeklVOZC7CA2xlYWXRP9GT/N1ryPssqJwlbfy8dlsWkj+4TVWkknkoj9U2ZEW7mY7imAKRfNHQgdpfWeg+81/uNlTRSn6oSWRClwz/u6tQptK1gkOX47WrspJc7TaSDyUvss3lMo9cqqEwsgt1FcxUjmS1xryep+oagmEWrWog30pyey+VnBlToAdTBTOVIzGqvGUlr0t3yQS3gXwqmabJ5EKlUtmUIsltUFcBTX4kV2hOojvyvMYsE1JcBvKp5B5NJjdkDXqK5XVdJtNKMVDIVMrjtCvyJLncbSCfSp7TZHJFrktSvN+mi2kqTph0sdyg0C7Im+RGt4F8SuYN5HOS5YLiTaGQsV+jjEEvFfwMVXLD6ubxrWLNKvCN3w95X4OgiTSLQ69ttNxFkfxmdfP4VjJXkykUzFqhqA+limzKJpkeeQFG3UDLXCRyUd5lIJ9K/qLJFI5MoKDAP6fAdliQUdRQHonZV0vrg2RXt4F8Kjlbk/GGTgaZ27P4pl5Lrp/OLGEBkK6NMMsbqxvIp5I8Jjf0GQw7lKJfgmKatVS25lM3eWbK2xzdFPLgn8tEPpQ8zbashnej82LtrtdapF/oX7W2tm6mZSuLpIo8zWNNKwnlPfKD6Yyj0Msfd5CpW7LLv4vRNKTny5Jfu81UpJLH2fo4i+w1nZ2dQ+icU9BCR8c1m2Rvs5eWJiS6NsU881Y1U5FKPkI7afDg0OPZKcj3izjKltzTn0X7ZUHlUg/P1kGyPSrgQcG0kgR9X4MGjcyTpfPkFZ1e31TiW3wp5X7+Te3t7bvQ7JBN2pNkX7TEbbI81G3Uc/k5loJ8zCA6cw90HSplvdgiRFtk/bCzMWmui5F4ROaXFnE5q3vXfxI/x2bUVZAH/NhNfpOOlicTylp0N4sWkPvVtGFCEU/blkBXC8b666pmy6Lu4+EwX8WdgTFjxgyj8+Uw4RYMEOpz+rKU5Rwkrxndq0Hfptg1CJPJQmtyLdRhwN4oeQudyc+b6Ic2LGICzLAbpj0D3Y1k4oz3x8SJK7eS5e7c79Gx7OKrpBf13qwPdK2H4eRY9gb09qpmdClZiu5Fx6Gh+iFNh7wArl6v45dRk9A5SEbfJ5Ac82ZeuJfPkSV43mQri2jMQCdXq9UvlXAbNFS6jbsdOoKfT2M7je10trJi4GR+3h01/CiakYGyIBnm+pxcIkJH8PP30FTMdg7b6T2FIc9mK5fRvsXvHsLvjJcvAT830UAwYMD/AIDQrq849C9bAAAAAElFTkSuQmCC</MacroImage>
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>Iterative Input</Input>
+        <Output>Iterative Output</Output>
+        <IterationLimit value="1000" />
+        <LimitBehavior>Warn</LimitBehavior>
+        <OutputMode>AllSame</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="11" Selected="True" />
+        <Tool ToolId="14" Selected="True" />
+        <Tool ToolId="15" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

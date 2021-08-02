@@ -8,41 +8,6 @@ export default [
   exact: true,
 },
 {
-  path: '/build/__docusaurus/debug',
-  component: ComponentCreator('/build/__docusaurus/debug','553'),
-  exact: true,
-},
-{
-  path: '/build/__docusaurus/debug/config',
-  component: ComponentCreator('/build/__docusaurus/debug/config','c66'),
-  exact: true,
-},
-{
-  path: '/build/__docusaurus/debug/content',
-  component: ComponentCreator('/build/__docusaurus/debug/content','c02'),
-  exact: true,
-},
-{
-  path: '/build/__docusaurus/debug/globalData',
-  component: ComponentCreator('/build/__docusaurus/debug/globalData','514'),
-  exact: true,
-},
-{
-  path: '/build/__docusaurus/debug/metadata',
-  component: ComponentCreator('/build/__docusaurus/debug/metadata','696'),
-  exact: true,
-},
-{
-  path: '/build/__docusaurus/debug/registry',
-  component: ComponentCreator('/build/__docusaurus/debug/registry','df9'),
-  exact: true,
-},
-{
-  path: '/build/__docusaurus/debug/routes',
-  component: ComponentCreator('/build/__docusaurus/debug/routes','03b'),
-  exact: true,
-},
-{
   path: '/build/blog',
   component: ComponentCreator('/build/blog','313'),
   exact: true,
@@ -104,9 +69,19 @@ export default [
 },
 {
   path: '/build/docs',
-  component: ComponentCreator('/build/docs','a55'),
+  component: ComponentCreator('/build/docs','115'),
   
   routes: [
+{
+  path: '/build/docs/Connections/Bubble',
+  component: ComponentCreator('/build/docs/Connections/Bubble','dda'),
+  exact: true,
+},
+{
+  path: '/build/docs/Connections/Maconomy',
+  component: ComponentCreator('/build/docs/Connections/Maconomy','ece'),
+  exact: true,
+},
 {
   path: '/build/docs/Connections/Snowflake',
   component: ComponentCreator('/build/docs/Connections/Snowflake','7f7'),

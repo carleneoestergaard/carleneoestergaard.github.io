@@ -1,0 +1,23 @@
+{
+  "unversionedId": "Connections/Maconomy",
+  "id": "Connections/Maconomy",
+  "isDocsHomePage": false,
+  "title": "Maconomy",
+  "description": "",
+  "source": "@site/docs/Connections/Maconomy.md",
+  "sourceDirName": "Connections",
+  "slug": "/Connections/Maconomy",
+  "permalink": "/build/docs/Connections/Maconomy",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/Connections/Maconomy.md",
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Bubble",
+    "permalink": "/build/docs/Connections/Bubble"
+  },
+  "next": {
+    "title": "Snowflake",
+    "permalink": "/build/docs/Connections/Snowflake"
+  }
+}
