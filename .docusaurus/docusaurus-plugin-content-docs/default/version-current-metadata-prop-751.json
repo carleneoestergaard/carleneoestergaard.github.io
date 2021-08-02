@@ -75,6 +75,11 @@
             "type": "link",
             "label": "Snowflake",
             "href": "/build/docs/Connections/Snowflake"
+          },
+          {
+            "type": "link",
+            "label": "WebCRM",
+            "href": "/build/docs/Connections/WebCRM"
           }
         ],
         "collapsed": true
@@ -104,6 +109,7 @@
     "/build/docs/Connections/Maconomy": "tutorialSidebar",
     "/build/docs/Connections/Oracle": "tutorialSidebar",
     "/build/docs/Connections/Snowflake": "tutorialSidebar",
+    "/build/docs/Connections/WebCRM": "tutorialSidebar",
     "/build/docs/intro": "tutorialSidebar",
     "/build/docs/tutorial-basics/congratulations": "tutorialSidebar",
     "/build/docs/tutorial-basics/create-a-blog-post": "tutorialSidebar",

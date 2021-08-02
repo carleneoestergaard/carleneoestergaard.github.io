@@ -36,6 +36,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "Connections/WebCRM",
+              "path": "/build/docs/Connections/WebCRM",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "intro",
               "path": "/build/docs/intro",
               "sidebar": "tutorialSidebar"

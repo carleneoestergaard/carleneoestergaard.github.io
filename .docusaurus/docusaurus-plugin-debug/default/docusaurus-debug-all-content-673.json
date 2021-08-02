@@ -74,6 +74,10 @@
                   {
                     "type": "doc",
                     "id": "Connections/Snowflake"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Connections/WebCRM"
                   }
                 ],
                 "collapsed": true
@@ -101,6 +105,7 @@
             "/build/docs/Connections/Maconomy": "tutorialSidebar",
             "/build/docs/Connections/Oracle": "tutorialSidebar",
             "/build/docs/Connections/Snowflake": "tutorialSidebar",
+            "/build/docs/Connections/WebCRM": "tutorialSidebar",
             "/build/docs/intro": "tutorialSidebar",
             "/build/docs/tutorial-basics/congratulations": "tutorialSidebar",
             "/build/docs/tutorial-basics/create-a-blog-post": "tutorialSidebar",
@@ -221,6 +226,29 @@
               "previous": {
                 "title": "Oracle Databases",
                 "permalink": "/build/docs/Connections/Oracle"
+              },
+              "next": {
+                "title": "WebCRM",
+                "permalink": "/build/docs/Connections/WebCRM"
+              }
+            },
+            {
+              "unversionedId": "Connections/WebCRM",
+              "id": "Connections/WebCRM",
+              "isDocsHomePage": false,
+              "title": "WebCRM",
+              "description": "Download the macros here",
+              "source": "@site/docs/Connections/WebCRM.md",
+              "sourceDirName": "Connections",
+              "slug": "/Connections/WebCRM",
+              "permalink": "/build/docs/Connections/WebCRM",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/Connections/WebCRM.md",
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Snowflake",
+                "permalink": "/build/docs/Connections/Snowflake"
               },
               "next": {
                 "title": "Manage Docs Versions",
@@ -423,8 +451,8 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Snowflake",
-                "permalink": "/build/docs/Connections/Snowflake"
+                "title": "WebCRM",
+                "permalink": "/build/docs/Connections/WebCRM"
               },
               "next": {
                 "title": "Translate your site",

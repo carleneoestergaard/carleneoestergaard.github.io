@@ -1,0 +1,23 @@
+{
+  "unversionedId": "Connections/WebCRM",
+  "id": "Connections/WebCRM",
+  "isDocsHomePage": false,
+  "title": "WebCRM",
+  "description": "Download the macros here",
+  "source": "@site/docs/Connections/WebCRM.md",
+  "sourceDirName": "Connections",
+  "slug": "/Connections/WebCRM",
+  "permalink": "/build/docs/Connections/WebCRM",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/Connections/WebCRM.md",
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Snowflake",
+    "permalink": "/build/docs/Connections/Snowflake"
+  },
+  "next": {
+    "title": "Manage Docs Versions",
+    "permalink": "/build/docs/tutorial-extras/manage-docs-versions"
+  }
+}

@@ -104,7 +104,7 @@ export default [
 },
 {
   path: '/build/docs',
-  component: ComponentCreator('/build/docs','eaa'),
+  component: ComponentCreator('/build/docs','661'),
   
   routes: [
 {
@@ -130,6 +130,11 @@ export default [
 {
   path: '/build/docs/Connections/Snowflake',
   component: ComponentCreator('/build/docs/Connections/Snowflake','7f7'),
+  exact: true,
+},
+{
+  path: '/build/docs/Connections/WebCRM',
+  component: ComponentCreator('/build/docs/Connections/WebCRM','d1c'),
   exact: true,
 },
 {
