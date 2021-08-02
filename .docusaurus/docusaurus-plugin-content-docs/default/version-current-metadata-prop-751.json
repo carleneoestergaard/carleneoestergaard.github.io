@@ -68,6 +68,11 @@
           },
           {
             "type": "link",
+            "label": "Oracle Databases",
+            "href": "/build/docs/Connections/Oracle"
+          },
+          {
+            "type": "link",
             "label": "Snowflake",
             "href": "/build/docs/Connections/Snowflake"
           }
@@ -97,6 +102,7 @@
     "/build/docs/Connections/Bubble": "tutorialSidebar",
     "/build/docs/Connections/Economic": "tutorialSidebar",
     "/build/docs/Connections/Maconomy": "tutorialSidebar",
+    "/build/docs/Connections/Oracle": "tutorialSidebar",
     "/build/docs/Connections/Snowflake": "tutorialSidebar",
     "/build/docs/intro": "tutorialSidebar",
     "/build/docs/tutorial-basics/congratulations": "tutorialSidebar",

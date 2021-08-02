@@ -3,7 +3,7 @@
   "id": "Connections/Bubble",
   "isDocsHomePage": false,
   "title": "Bubble",
-  "description": "Connecting to Bubblie.io is a fairly straightfoward API with an API auth token.",
+  "description": "Connecting to Bubble.io is a fairly straightfoward API with an API auth token.",
   "source": "@site/docs/Connections/Bubble.md",
   "sourceDirName": "Connections",
   "slug": "/Connections/Bubble",

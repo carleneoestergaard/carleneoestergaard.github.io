@@ -1,0 +1,23 @@
+{
+  "unversionedId": "Connections/Oracle",
+  "id": "Connections/Oracle",
+  "isDocsHomePage": false,
+  "title": "Oracle Databases",
+  "description": "Connecting to oracle databases is a pain in the ass. There are many blogs online about how to do it, which all seem to offer different options. Below is how we connected to oracle at Devoteam FR, and hopefully you can copy the process for your own.",
+  "source": "@site/docs/Connections/Oracle.md",
+  "sourceDirName": "Connections",
+  "slug": "/Connections/Oracle",
+  "permalink": "/build/docs/Connections/Oracle",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/Connections/Oracle.md",
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Maconomy",
+    "permalink": "/build/docs/Connections/Maconomy"
+  },
+  "next": {
+    "title": "Snowflake",
+    "permalink": "/build/docs/Connections/Snowflake"
+  }
+}

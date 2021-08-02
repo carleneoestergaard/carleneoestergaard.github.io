@@ -13,8 +13,8 @@
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Maconomy",
-    "permalink": "/build/docs/Connections/Maconomy"
+    "title": "Oracle Databases",
+    "permalink": "/build/docs/Connections/Oracle"
   },
   "next": {
     "title": "Manage Docs Versions",
