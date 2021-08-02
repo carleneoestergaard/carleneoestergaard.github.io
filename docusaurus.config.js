@@ -1,3 +1,5 @@
+
+  
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Inviso Alteryx Documetation',
@@ -29,14 +31,18 @@ module.exports = {
       
       
       navbar: {
-      title: 'Portal',
+      title: 'Alteryx Documentation',
       logo: {
         alt: 'My Site Logo',
         src: 'img/Inviso_Logo.png',
       },
       items: [
-       
-        {to: '/reference', label: 'Reference', position: 'left',activeBaseRegex: '/reference/',},
+        {
+          type: 'doc',
+          docId: 'intro',
+          position: 'left',
+          label: 'Designer',
+        },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/carleneoestergaard/inviso-alteryx',
@@ -96,12 +102,8 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
-            routeBasePath: 'reference',
-            path: 'reference',
-          sidebarPath: require.resolve('./reference/sidebars.js'),
+          sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-             lastVersion: 'current',
-          onlyIncludeVersions: ['current'],
           editUrl:
             'https://github.com/facebook/docusaurus/edit/master/website/',
         },

@@ -8,41 +8,6 @@ export default [
   exact: true,
 },
 {
-  path: '/build/__docusaurus/debug',
-  component: ComponentCreator('/build/__docusaurus/debug','553'),
-  exact: true,
-},
-{
-  path: '/build/__docusaurus/debug/config',
-  component: ComponentCreator('/build/__docusaurus/debug/config','c66'),
-  exact: true,
-},
-{
-  path: '/build/__docusaurus/debug/content',
-  component: ComponentCreator('/build/__docusaurus/debug/content','c02'),
-  exact: true,
-},
-{
-  path: '/build/__docusaurus/debug/globalData',
-  component: ComponentCreator('/build/__docusaurus/debug/globalData','514'),
-  exact: true,
-},
-{
-  path: '/build/__docusaurus/debug/metadata',
-  component: ComponentCreator('/build/__docusaurus/debug/metadata','696'),
-  exact: true,
-},
-{
-  path: '/build/__docusaurus/debug/registry',
-  component: ComponentCreator('/build/__docusaurus/debug/registry','df9'),
-  exact: true,
-},
-{
-  path: '/build/__docusaurus/debug/routes',
-  component: ComponentCreator('/build/__docusaurus/debug/routes','03b'),
-  exact: true,
-},
-{
   path: '/build/blog',
   component: ComponentCreator('/build/blog','313'),
   exact: true,
@@ -103,58 +68,58 @@ export default [
   exact: true,
 },
 {
-  path: '/build/reference',
-  component: ComponentCreator('/build/reference','900'),
+  path: '/build/docs',
+  component: ComponentCreator('/build/docs','a55'),
   
   routes: [
 {
-  path: '/build/reference/Connections/Snowflake',
-  component: ComponentCreator('/build/reference/Connections/Snowflake','075'),
+  path: '/build/docs/Connections/Snowflake',
+  component: ComponentCreator('/build/docs/Connections/Snowflake','7f7'),
   exact: true,
 },
 {
-  path: '/build/reference/intro',
-  component: ComponentCreator('/build/reference/intro','6a1'),
+  path: '/build/docs/intro',
+  component: ComponentCreator('/build/docs/intro','071'),
   exact: true,
 },
 {
-  path: '/build/reference/tutorial-basics/congratulations',
-  component: ComponentCreator('/build/reference/tutorial-basics/congratulations','0ec'),
+  path: '/build/docs/tutorial-basics/congratulations',
+  component: ComponentCreator('/build/docs/tutorial-basics/congratulations','731'),
   exact: true,
 },
 {
-  path: '/build/reference/tutorial-basics/create-a-blog-post',
-  component: ComponentCreator('/build/reference/tutorial-basics/create-a-blog-post','eef'),
+  path: '/build/docs/tutorial-basics/create-a-blog-post',
+  component: ComponentCreator('/build/docs/tutorial-basics/create-a-blog-post','9c7'),
   exact: true,
 },
 {
-  path: '/build/reference/tutorial-basics/create-a-document',
-  component: ComponentCreator('/build/reference/tutorial-basics/create-a-document','f19'),
+  path: '/build/docs/tutorial-basics/create-a-document',
+  component: ComponentCreator('/build/docs/tutorial-basics/create-a-document','b7c'),
   exact: true,
 },
 {
-  path: '/build/reference/tutorial-basics/create-a-page',
-  component: ComponentCreator('/build/reference/tutorial-basics/create-a-page','32d'),
+  path: '/build/docs/tutorial-basics/create-a-page',
+  component: ComponentCreator('/build/docs/tutorial-basics/create-a-page','519'),
   exact: true,
 },
 {
-  path: '/build/reference/tutorial-basics/deploy-your-site',
-  component: ComponentCreator('/build/reference/tutorial-basics/deploy-your-site','f00'),
+  path: '/build/docs/tutorial-basics/deploy-your-site',
+  component: ComponentCreator('/build/docs/tutorial-basics/deploy-your-site','4cb'),
   exact: true,
 },
 {
-  path: '/build/reference/tutorial-basics/markdown-features',
-  component: ComponentCreator('/build/reference/tutorial-basics/markdown-features','aad'),
+  path: '/build/docs/tutorial-basics/markdown-features',
+  component: ComponentCreator('/build/docs/tutorial-basics/markdown-features','ffb'),
   exact: true,
 },
 {
-  path: '/build/reference/tutorial-extras/manage-docs-versions',
-  component: ComponentCreator('/build/reference/tutorial-extras/manage-docs-versions','203'),
+  path: '/build/docs/tutorial-extras/manage-docs-versions',
+  component: ComponentCreator('/build/docs/tutorial-extras/manage-docs-versions','c3f'),
   exact: true,
 },
 {
-  path: '/build/reference/tutorial-extras/translate-your-site',
-  component: ComponentCreator('/build/reference/tutorial-extras/translate-your-site','13e'),
+  path: '/build/docs/tutorial-extras/translate-your-site',
+  component: ComponentCreator('/build/docs/tutorial-extras/translate-your-site','1c7'),
   exact: true,
 },
 ]
