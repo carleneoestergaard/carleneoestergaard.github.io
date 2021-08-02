@@ -1,5 +1,4 @@
-
-  
+ 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Inviso Alteryx Documetation',
