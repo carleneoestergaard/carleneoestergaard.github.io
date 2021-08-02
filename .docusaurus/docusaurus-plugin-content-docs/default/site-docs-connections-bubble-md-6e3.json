@@ -1,0 +1,23 @@
+{
+  "unversionedId": "Connections/Bubble",
+  "id": "Connections/Bubble",
+  "isDocsHomePage": false,
+  "title": "Bubble",
+  "description": "Connecting to Bubblie.io is a fairly straightfoward API with API keys.",
+  "source": "@site/docs/Connections/Bubble.md",
+  "sourceDirName": "Connections",
+  "slug": "/Connections/Bubble",
+  "permalink": "/build/docs/Connections/Bubble",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/Connections/Bubble.md",
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Congratulations!",
+    "permalink": "/build/docs/tutorial-basics/congratulations"
+  },
+  "next": {
+    "title": "Maconomy",
+    "permalink": "/build/docs/Connections/Maconomy"
+  }
+}

@@ -53,6 +53,16 @@
         "items": [
           {
             "type": "link",
+            "label": "Bubble",
+            "href": "/build/docs/Connections/Bubble"
+          },
+          {
+            "type": "link",
+            "label": "Maconomy",
+            "href": "/build/docs/Connections/Maconomy"
+          },
+          {
+            "type": "link",
             "label": "Snowflake",
             "href": "/build/docs/Connections/Snowflake"
           }
@@ -79,6 +89,8 @@
     ]
   },
   "permalinkToSidebar": {
+    "/build/docs/Connections/Bubble": "tutorialSidebar",
+    "/build/docs/Connections/Maconomy": "tutorialSidebar",
     "/build/docs/Connections/Snowflake": "tutorialSidebar",
     "/build/docs/intro": "tutorialSidebar",
     "/build/docs/tutorial-basics/congratulations": "tutorialSidebar",
