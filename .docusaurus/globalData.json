@@ -11,6 +11,16 @@
           "mainDocId": "intro",
           "docs": [
             {
+              "id": "Connections/Bubble",
+              "path": "/build/docs/Connections/Bubble",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Connections/Maconomy",
+              "path": "/build/docs/Connections/Maconomy",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "Connections/Snowflake",
               "path": "/build/docs/Connections/Snowflake",
               "sidebar": "tutorialSidebar"
