@@ -3,7 +3,7 @@
   "id": "Connections/Bubble",
   "isDocsHomePage": false,
   "title": "Bubble",
-  "description": "Connecting to Bubblie.io is a fairly straightfoward API with API keys.",
+  "description": "Connecting to Bubblie.io is a fairly straightfoward API with an API auth token.",
   "source": "@site/docs/Connections/Bubble.md",
   "sourceDirName": "Connections",
   "slug": "/Connections/Bubble",
@@ -17,7 +17,7 @@
     "permalink": "/build/docs/tutorial-basics/congratulations"
   },
   "next": {
-    "title": "Maconomy",
-    "permalink": "/build/docs/Connections/Maconomy"
+    "title": "Economic",
+    "permalink": "/build/docs/Connections/Economic"
   }
 }

@@ -3,7 +3,7 @@
   "id": "Connections/Maconomy",
   "isDocsHomePage": false,
   "title": "Maconomy",
-  "description": "",
+  "description": "To connect to maconomy you should be able to use a standard ODBC connection",
   "source": "@site/docs/Connections/Maconomy.md",
   "sourceDirName": "Connections",
   "slug": "/Connections/Maconomy",
@@ -13,8 +13,8 @@
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Bubble",
-    "permalink": "/build/docs/Connections/Bubble"
+    "title": "Economic",
+    "permalink": "/build/docs/Connections/Economic"
   },
   "next": {
     "title": "Snowflake",

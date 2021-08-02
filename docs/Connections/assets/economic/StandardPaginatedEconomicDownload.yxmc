@@ -1,0 +1,1383 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.2">
+  <Nodes>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="42" width="1104" height="108" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[WORKFLOW:
+
+
+Description: This macro allows you to download from Zibra's Economics system (https://restdocs.e-conomic.com/#introduction). This macro can be used for most standard endpoints that have last page ind their output. 
+
+First this workflows determines how many records that need to be downloaded and then it downloads them. (Pagination). ]]></Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="255" g="255" b="187" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1170" y="42" width="300" height="108" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Change Log:
+
+Created
+msm@zibra.dk
+08/02/2021</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="255" g="255" b="187" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1229" y="509" width="258" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Output</Caption>
+          <Style TextColor="#314c4a" FillColor="#ff8080" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1254" y="558" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Page" selected="False" />
+                <SelectField field="JSON_Name2" selected="False" type="Int32" size="4" />
+                <SelectField field="bookedInvoiceNumber" selected="True" type="Int64" size="8" />
+                <SelectField field="currency" selected="True" size="10" />
+                <SelectField field="customer_customerNumber" selected="True" type="Int64" size="8" />
+                <SelectField field="customer_self" selected="False" />
+                <SelectField field="date" selected="True" type="Date" size="10" />
+                <SelectField field="dueDate" selected="True" type="Date" size="10" />
+                <SelectField field="grossAmount" selected="True" type="FixedDecimal" size="19.2" />
+                <SelectField field="grossAmountInBaseCurrency" selected="True" type="FixedDecimal" size="19.2" />
+                <SelectField field="layout_layoutNumber" selected="False" />
+                <SelectField field="layout_self" selected="False" />
+                <SelectField field="netAmount" selected="True" type="FixedDecimal" size="19.2" />
+                <SelectField field="netAmountInBaseCurrency" selected="True" type="FixedDecimal" size="19.2" />
+                <SelectField field="notes_heading" selected="True" size="128" />
+                <SelectField field="notes_textLine1" selected="True" size="128" />
+                <SelectField field="notes_textLine2" selected="True" size="128" />
+                <SelectField field="paymentTerms_daysOfCredit" selected="True" type="Int64" size="8" />
+                <SelectField field="paymentTerms_name" selected="True" size="128" />
+                <SelectField field="paymentTerms_paymentTermsNumber" selected="True" type="Int64" size="8" />
+                <SelectField field="paymentTerms_paymentTermsType" selected="True" size="32" />
+                <SelectField field="paymentTerms_self" selected="False" />
+                <SelectField field="pdf_download" selected="True" size="1024" />
+                <SelectField field="recipient_address" selected="True" size="128" />
+                <SelectField field="recipient_attention_customerContactNumber" selected="True" size="128" />
+                <SelectField field="recipient_attention_self" selected="False" />
+                <SelectField field="recipient_city" selected="True" size="128" />
+                <SelectField field="recipient_country" selected="True" size="128" />
+                <SelectField field="recipient_ean" selected="True" size="128" />
+                <SelectField field="recipient_name" selected="True" size="128" />
+                <SelectField field="recipient_zip" selected="True" size="128" />
+                <SelectField field="references_customerContact_customerContactNumber" selected="True" size="128" />
+                <SelectField field="references_customerContact_self" selected="True" size="128" />
+                <SelectField field="references_other" selected="True" size="128" />
+                <SelectField field="remainder" selected="True" type="FixedDecimal" size="19.2" />
+                <SelectField field="remainderInBaseCurrency" selected="True" type="FixedDecimal" size="19.2" />
+                <SelectField field="roundingAmount" selected="True" type="FixedDecimal" size="19.2" />
+                <SelectField field="self" selected="False" size="64" />
+                <SelectField field="sent" selected="False" size="64" />
+                <SelectField field="vatAmount" selected="True" type="FixedDecimal" size="19.2" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="company_id" size="24" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="bookedInvoiceNumber" source="CrossTab:Header:JSON_Name3:bookedInvoiceNumber:Concat:" type="Int64" />
+                <Field name="currency" size="10" source="CrossTab:Header:JSON_Name3:currency:Concat:" type="V_WString" />
+                <Field name="customer_customerNumber" source="CrossTab:Header:JSON_Name3:customer.customerNumber:Concat:" type="Int64" />
+                <Field name="date" source="CrossTab:Header:JSON_Name3:date:Concat:" type="Date" />
+                <Field name="delivery_address" size="2048" source="CrossTab:Header:JSON_Name3:delivery.address:Concat:" type="V_WString" />
+                <Field name="delivery_city" size="2048" source="CrossTab:Header:JSON_Name3:delivery.city:Concat:" type="V_WString" />
+                <Field name="delivery_country" size="2048" source="CrossTab:Header:JSON_Name3:delivery.country:Concat:" type="V_WString" />
+                <Field name="delivery_deliveryDate" size="2048" source="CrossTab:Header:JSON_Name3:delivery.deliveryDate:Concat:" type="V_WString" />
+                <Field name="delivery_deliveryTerms" size="2048" source="CrossTab:Header:JSON_Name3:delivery.deliveryTerms:Concat:" type="V_WString" />
+                <Field name="delivery_zip" size="2048" source="CrossTab:Header:JSON_Name3:delivery.zip:Concat:" type="V_WString" />
+                <Field name="deliveryLocation_deliveryLocationNumber" size="2048" source="CrossTab:Header:JSON_Name3:deliveryLocation.deliveryLocationNumber:Concat:" type="V_WString" />
+                <Field name="deliveryLocation_self" size="2048" source="CrossTab:Header:JSON_Name3:deliveryLocation.self:Concat:" type="V_WString" />
+                <Field name="dueDate" source="CrossTab:Header:JSON_Name3:dueDate:Concat:" type="Date" />
+                <Field name="exchangeRate" size="2048" source="CrossTab:Header:JSON_Name3:exchangeRate:Concat:" type="V_WString" />
+                <Field name="grossAmount" scale="2" size="19" source="CrossTab:Header:JSON_Name3:grossAmount:Concat:" type="FixedDecimal" />
+                <Field name="grossAmountInBaseCurrency" scale="2" size="19" source="CrossTab:Header:JSON_Name3:grossAmountInBaseCurrency:Concat:" type="FixedDecimal" />
+                <Field name="netAmount" scale="2" size="19" source="CrossTab:Header:JSON_Name3:netAmount:Concat:" type="FixedDecimal" />
+                <Field name="netAmountInBaseCurrency" scale="2" size="19" source="CrossTab:Header:JSON_Name3:netAmountInBaseCurrency:Concat:" type="FixedDecimal" />
+                <Field name="notes_heading" size="128" source="CrossTab:Header:JSON_Name3:notes.heading:Concat:" type="V_WString" />
+                <Field name="notes_textLine1" size="128" source="CrossTab:Header:JSON_Name3:notes.textLine1:Concat:" type="V_WString" />
+                <Field name="notes_textLine2" size="128" source="CrossTab:Header:JSON_Name3:notes.textLine2:Concat:" type="V_WString" />
+                <Field name="paymentTerms_contraAccountForPrepaidAmount_accountNumber" size="2048" source="CrossTab:Header:JSON_Name3:paymentTerms.contraAccountForPrepaidAmount.accountNumber:Concat:" type="V_WString" />
+                <Field name="paymentTerms_contraAccountForPrepaidAmount_self" size="2048" source="CrossTab:Header:JSON_Name3:paymentTerms.contraAccountForPrepaidAmount.self:Concat:" type="V_WString" />
+                <Field name="paymentTerms_daysOfCredit" source="CrossTab:Header:JSON_Name3:paymentTerms.daysOfCredit:Concat:" type="Int64" />
+                <Field name="paymentTerms_description" size="2048" source="CrossTab:Header:JSON_Name3:paymentTerms.description:Concat:" type="V_WString" />
+                <Field name="paymentTerms_name" size="128" source="CrossTab:Header:JSON_Name3:paymentTerms.name:Concat:" type="V_WString" />
+                <Field name="paymentTerms_paymentTermsNumber" source="CrossTab:Header:JSON_Name3:paymentTerms.paymentTermsNumber:Concat:" type="Int64" />
+                <Field name="paymentTerms_paymentTermsType" size="32" source="CrossTab:Header:JSON_Name3:paymentTerms.paymentTermsType:Concat:" type="V_WString" />
+                <Field name="pdf_download" size="1024" source="CrossTab:Header:JSON_Name3:pdf.download:Concat:" type="V_WString" />
+                <Field name="project_projectNumber" size="2048" source="CrossTab:Header:JSON_Name3:project.projectNumber:Concat:" type="V_WString" />
+                <Field name="project_self" size="2048" source="CrossTab:Header:JSON_Name3:project.self:Concat:" type="V_WString" />
+                <Field name="recipient_address" size="128" source="CrossTab:Header:JSON_Name3:recipient.address:Concat:" type="V_WString" />
+                <Field name="recipient_attention_customerContactNumber" size="128" source="CrossTab:Header:JSON_Name3:recipient.attention.customerContactNumber:Concat:" type="V_WString" />
+                <Field name="recipient_city" size="128" source="CrossTab:Header:JSON_Name3:recipient.city:Concat:" type="V_WString" />
+                <Field name="recipient_country" size="128" source="CrossTab:Header:JSON_Name3:recipient.country:Concat:" type="V_WString" />
+                <Field name="recipient_ean" size="128" source="CrossTab:Header:JSON_Name3:recipient.ean:Concat:" type="V_WString" />
+                <Field name="recipient_name" size="128" source="CrossTab:Header:JSON_Name3:recipient.name:Concat:" type="V_WString" />
+                <Field name="recipient_publicEntryNumber" size="2048" source="CrossTab:Header:JSON_Name3:recipient.publicEntryNumber:Concat:" type="V_WString" />
+                <Field name="recipient_vatZone_enabledForCustomer" size="2048" source="CrossTab:Header:JSON_Name3:recipient.vatZone.enabledForCustomer:Concat:" type="V_WString" />
+                <Field name="recipient_vatZone_enabledForSupplier" size="2048" source="CrossTab:Header:JSON_Name3:recipient.vatZone.enabledForSupplier:Concat:" type="V_WString" />
+                <Field name="recipient_vatZone_name" size="2048" source="CrossTab:Header:JSON_Name3:recipient.vatZone.name:Concat:" type="V_WString" />
+                <Field name="recipient_vatZone_self" size="2048" source="CrossTab:Header:JSON_Name3:recipient.vatZone.self:Concat:" type="V_WString" />
+                <Field name="recipient_vatZone_vatZoneNumber" size="2048" source="CrossTab:Header:JSON_Name3:recipient.vatZone.vatZoneNumber:Concat:" type="V_WString" />
+                <Field name="recipient_zip" size="128" source="CrossTab:Header:JSON_Name3:recipient.zip:Concat:" type="V_WString" />
+                <Field name="references_customerContact_customerContactNumber" size="128" source="CrossTab:Header:JSON_Name3:references.customerContact.customerContactNumber:Concat:" type="V_WString" />
+                <Field name="references_customerContact_self" size="128" source="CrossTab:Header:JSON_Name3:references.customerContact.self:Concat:" type="V_WString" />
+                <Field name="references_other" size="128" source="CrossTab:Header:JSON_Name3:references.other:Concat:" type="V_WString" />
+                <Field name="references_salesPerson_employeeNumber" size="2048" source="CrossTab:Header:JSON_Name3:references.salesPerson.employeeNumber:Concat:" type="V_WString" />
+                <Field name="references_salesPerson_self" size="2048" source="CrossTab:Header:JSON_Name3:references.salesPerson.self:Concat:" type="V_WString" />
+                <Field name="references_vendorReference_employeeNumber" size="2048" source="CrossTab:Header:JSON_Name3:references.vendorReference.employeeNumber:Concat:" type="V_WString" />
+                <Field name="references_vendorReference_self" size="2048" source="CrossTab:Header:JSON_Name3:references.vendorReference.self:Concat:" type="V_WString" />
+                <Field name="remainder" scale="2" size="19" source="CrossTab:Header:JSON_Name3:remainder:Concat:" type="FixedDecimal" />
+                <Field name="remainderInBaseCurrency" scale="2" size="19" source="CrossTab:Header:JSON_Name3:remainderInBaseCurrency:Concat:" type="FixedDecimal" />
+                <Field name="roundingAmount" scale="2" size="19" source="CrossTab:Header:JSON_Name3:roundingAmount:Concat:" type="FixedDecimal" />
+                <Field name="vatAmount" scale="2" size="19" source="CrossTab:Header:JSON_Name3:vatAmount:Concat:" type="FixedDecimal" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="company_id" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="26">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+            <Position x="1350" y="558" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Name>Output</Name>
+              <Abbrev>o</Abbrev>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>o Output</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="53.00001" y="509" width="1117" height="217" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>API Download (Calling API)</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="78.00002" y="581.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="JSON_Name" selected="False" />
+                <SelectField field="JSON_ValueString" selected="False" />
+                <SelectField field="JSON_Name1" selected="False" />
+                <SelectField field="JSON_Name2" selected="False" />
+                <SelectField field="JSON_Name3" selected="False" />
+                <SelectField field="RegExOut1" selected="True" rename="count" type="Int64" size="8" />
+                <SelectField field="url" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="company_id" size="24" source="TextInput:" type="V_String" />
+                <Field description="RegEx: Parsed from JSON_ValueString" name="count" source="RegEx: Parsed from JSON_ValueString" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
+            <Position x="162" y="582.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UpdateField value="False" />
+              <UpdateField_Name />
+              <CreateField_Name>Page</CreateField_Name>
+              <CreateField_Type>Int32</CreateField_Type>
+              <CreateField_Size>4</CreateField_Size>
+              <Expression_Init>0</Expression_Init>
+              <Expression_Cond>Page &lt;= [count]</Expression_Cond>
+              <Expression_Loop>Page + 1</Expression_Loop>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="company_id" size="24" source="TextInput:" type="V_String" />
+                <Field description="RegEx: Parsed from JSON_ValueString" name="count" source="RegEx: Parsed from JSON_ValueString" type="Int64" />
+                <Field name="Page" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="510" y="570" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[url] + &quot;&amp;skippages=&quot; + [Page]" field="url" size="200" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[url = [url] + "&skippages=" + [Page]
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="X-AppSecretToken" size="44" source="TextInput:" type="String" />
+                <Field name="X-AgreementGrantToken" size="44" source="TextInput:" type="String" />
+                <Field name="company_id" size="24" source="TextInput:" type="V_String" />
+                <Field name="url" size="200" source="Formula: [url] + &quot;&amp;skippages=&quot; + [Page]" type="V_WString" />
+                <Field description="RegEx: Parsed from JSON_ValueString" name="count" size="200" source="RegEx: Parsed from JSON_ValueString" type="V_WString" />
+                <Field name="Page" size="200" type="V_WString" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="company_id" order="" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
+            <Position x="606" y="570" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <URLField>url</URLField>
+              <OutputMode>String</OutputMode>
+              <CodePage>65001</CodePage>
+              <EncodeURLs value="True" />
+              <Headers>
+                <NameValues>
+                  <Item name="Agent" value="application/json" />
+                </NameValues>
+                <Fields orderChanged="False">
+                  <Field name="X-AppSecretToken" />
+                  <Field name="X-AgreementGrantToken" />
+                  <Field name="company_id" selected="False" />
+                  <Field name="url" selected="False" />
+                  <Field name="count" selected="False" />
+                  <Field name="Page" selected="False" />
+                  <Field name="*Unknown" selected="False" />
+                </Fields>
+              </Headers>
+              <Payload>
+                <HTTPAction>GET</HTTPAction>
+                <QueryStringBodyMode>Compose</QueryStringBodyMode>
+                <ComposeNameValues />
+                <ComposeFields orderChanged="False">
+                  <Field name="X-AppSecretToken" selected="False" />
+                  <Field name="X-AgreementGrantToken" selected="False" />
+                  <Field name="company_id" selected="False" />
+                  <Field name="url" selected="False" />
+                  <Field name="count" selected="False" />
+                  <Field name="Page" selected="False" />
+                  <Field name="*Unknown" selected="False" />
+                </ComposeFields>
+              </Payload>
+              <UserName />
+              <Password />
+              <numConnections>32</numConnections>
+              <Timeout>600</Timeout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="X-AppSecretToken" size="44" source="TextInput:" type="String" />
+                <Field name="X-AgreementGrantToken" size="44" source="TextInput:" type="String" />
+                <Field name="company_id" size="24" source="TextInput:" type="V_String" />
+                <Field name="url" size="200" source="Formula: [url] + &quot;&amp;skippages=&quot; + [Page]" type="V_WString" />
+                <Field description="RegEx: Parsed from JSON_ValueString" name="count" size="200" source="RegEx: Parsed from JSON_ValueString" type="V_WString" />
+                <Field name="Page" size="200" type="V_WString" />
+                <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxDownload" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.JSONParse.JSONParse">
+            <Position x="702" y="570" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <JSON_Field>DownloadData</JSON_Field>
+              <IncludeInOutput value="False" />
+              <SingleField value="True" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="X-AppSecretToken" size="44" source="TextInput:" type="String" />
+                <Field name="X-AgreementGrantToken" size="44" source="TextInput:" type="String" />
+                <Field name="company_id" size="24" source="TextInput:" type="V_String" />
+                <Field name="url" size="200" source="Formula: [url] + &quot;&amp;skippages=&quot; + [Page]" type="V_WString" />
+                <Field description="RegEx: Parsed from JSON_ValueString" name="count" size="200" source="RegEx: Parsed from JSON_ValueString" type="V_WString" />
+                <Field name="Page" size="200" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJSONParse" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="798" y="570" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="X-AppSecretToken" selected="False" />
+                <SelectField field="X-AgreementGrantToken" selected="False" />
+                <SelectField field="url" selected="False" />
+                <SelectField field="DownloadHeaders" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="company_id" size="24" source="TextInput:" type="V_String" />
+                <Field description="RegEx: Parsed from JSON_ValueString" name="count" size="200" source="RegEx: Parsed from JSON_ValueString" type="V_WString" />
+                <Field name="Page" size="200" type="V_WString" />
+                <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+            <Position x="894" y="570" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>JSON_Name</Field>
+              <ErrorHandling>Last</ErrorHandling>
+              <RootName>JSON_Name</RootName>
+              <Delimeters value="." />
+              <NumFields value="3" />
+              <Flags value="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="company_id" size="24" source="TextInput:" type="V_String" />
+                <Field description="RegEx: Parsed from JSON_ValueString" name="count" size="200" source="RegEx: Parsed from JSON_ValueString" type="V_WString" />
+                <Field name="Page" size="200" type="V_WString" />
+                <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name1" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name2" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name3" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="990" y="570" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>JSON_Name1</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2018-06-19 15:28:33</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>collection</Operand>
+                  <StartDate>2018-06-19 15:28:33</StartDate>
+                  <EndDate>2018-06-19 15:28:33</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[JSON_Name1] = "collection"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="company_id" size="24" source="TextInput:" type="V_String" />
+                <Field description="RegEx: Parsed from JSON_ValueString" name="count" size="200" source="RegEx: Parsed from JSON_ValueString" type="V_WString" />
+                <Field name="Page" size="200" type="V_WString" />
+                <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name1" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name2" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name3" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="company_id" size="24" source="TextInput:" type="V_String" />
+                <Field description="RegEx: Parsed from JSON_ValueString" name="count" size="200" source="RegEx: Parsed from JSON_ValueString" type="V_WString" />
+                <Field name="Page" size="200" type="V_WString" />
+                <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name1" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name2" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name3" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="1086" y="558" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields>
+                <Field field="company_id" />
+                <Field field="Page" />
+                <Field field="JSON_Name2" />
+              </GroupFields>
+              <HeaderField field="JSON_Name3" />
+              <DataField field="JSON_ValueString" />
+              <Methods>
+                <Method method="Concat" />
+                <Separator>,</Separator>
+                <FieldSize value="2048" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="company_id" size="24" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="Page" size="200" source="CrossTab:Group:Concat:" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name2" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+                <Field name="bookedInvoiceNumber" size="2048" source="CrossTab:Header:JSON_Name3:bookedInvoiceNumber:Concat:" type="V_WString" />
+                <Field name="currency" size="2048" source="CrossTab:Header:JSON_Name3:currency:Concat:" type="V_WString" />
+                <Field name="customer_customerNumber" size="2048" source="CrossTab:Header:JSON_Name3:customer.customerNumber:Concat:" type="V_WString" />
+                <Field name="customer_self" size="2048" source="CrossTab:Header:JSON_Name3:customer.self:Concat:" type="V_WString" />
+                <Field name="date" size="2048" source="CrossTab:Header:JSON_Name3:date:Concat:" type="V_WString" />
+                <Field name="delivery_address" size="2048" source="CrossTab:Header:JSON_Name3:delivery.address:Concat:" type="V_WString" />
+                <Field name="delivery_city" size="2048" source="CrossTab:Header:JSON_Name3:delivery.city:Concat:" type="V_WString" />
+                <Field name="delivery_country" size="2048" source="CrossTab:Header:JSON_Name3:delivery.country:Concat:" type="V_WString" />
+                <Field name="delivery_deliveryDate" size="2048" source="CrossTab:Header:JSON_Name3:delivery.deliveryDate:Concat:" type="V_WString" />
+                <Field name="delivery_deliveryTerms" size="2048" source="CrossTab:Header:JSON_Name3:delivery.deliveryTerms:Concat:" type="V_WString" />
+                <Field name="delivery_zip" size="2048" source="CrossTab:Header:JSON_Name3:delivery.zip:Concat:" type="V_WString" />
+                <Field name="deliveryLocation_deliveryLocationNumber" size="2048" source="CrossTab:Header:JSON_Name3:deliveryLocation.deliveryLocationNumber:Concat:" type="V_WString" />
+                <Field name="deliveryLocation_self" size="2048" source="CrossTab:Header:JSON_Name3:deliveryLocation.self:Concat:" type="V_WString" />
+                <Field name="dueDate" size="2048" source="CrossTab:Header:JSON_Name3:dueDate:Concat:" type="V_WString" />
+                <Field name="exchangeRate" size="2048" source="CrossTab:Header:JSON_Name3:exchangeRate:Concat:" type="V_WString" />
+                <Field name="grossAmount" size="2048" source="CrossTab:Header:JSON_Name3:grossAmount:Concat:" type="V_WString" />
+                <Field name="grossAmountInBaseCurrency" size="2048" source="CrossTab:Header:JSON_Name3:grossAmountInBaseCurrency:Concat:" type="V_WString" />
+                <Field name="layout_layoutNumber" size="2048" source="CrossTab:Header:JSON_Name3:layout.layoutNumber:Concat:" type="V_WString" />
+                <Field name="layout_self" size="2048" source="CrossTab:Header:JSON_Name3:layout.self:Concat:" type="V_WString" />
+                <Field name="netAmount" size="2048" source="CrossTab:Header:JSON_Name3:netAmount:Concat:" type="V_WString" />
+                <Field name="netAmountInBaseCurrency" size="2048" source="CrossTab:Header:JSON_Name3:netAmountInBaseCurrency:Concat:" type="V_WString" />
+                <Field name="notes_heading" size="2048" source="CrossTab:Header:JSON_Name3:notes.heading:Concat:" type="V_WString" />
+                <Field name="notes_textLine1" size="2048" source="CrossTab:Header:JSON_Name3:notes.textLine1:Concat:" type="V_WString" />
+                <Field name="notes_textLine2" size="2048" source="CrossTab:Header:JSON_Name3:notes.textLine2:Concat:" type="V_WString" />
+                <Field name="paymentTerms_contraAccountForPrepaidAmount_accountNumber" size="2048" source="CrossTab:Header:JSON_Name3:paymentTerms.contraAccountForPrepaidAmount.accountNumber:Concat:" type="V_WString" />
+                <Field name="paymentTerms_contraAccountForPrepaidAmount_self" size="2048" source="CrossTab:Header:JSON_Name3:paymentTerms.contraAccountForPrepaidAmount.self:Concat:" type="V_WString" />
+                <Field name="paymentTerms_daysOfCredit" size="2048" source="CrossTab:Header:JSON_Name3:paymentTerms.daysOfCredit:Concat:" type="V_WString" />
+                <Field name="paymentTerms_description" size="2048" source="CrossTab:Header:JSON_Name3:paymentTerms.description:Concat:" type="V_WString" />
+                <Field name="paymentTerms_name" size="2048" source="CrossTab:Header:JSON_Name3:paymentTerms.name:Concat:" type="V_WString" />
+                <Field name="paymentTerms_paymentTermsNumber" size="2048" source="CrossTab:Header:JSON_Name3:paymentTerms.paymentTermsNumber:Concat:" type="V_WString" />
+                <Field name="paymentTerms_paymentTermsType" size="2048" source="CrossTab:Header:JSON_Name3:paymentTerms.paymentTermsType:Concat:" type="V_WString" />
+                <Field name="paymentTerms_self" size="2048" source="CrossTab:Header:JSON_Name3:paymentTerms.self:Concat:" type="V_WString" />
+                <Field name="pdf_download" size="2048" source="CrossTab:Header:JSON_Name3:pdf.download:Concat:" type="V_WString" />
+                <Field name="project_projectNumber" size="2048" source="CrossTab:Header:JSON_Name3:project.projectNumber:Concat:" type="V_WString" />
+                <Field name="project_self" size="2048" source="CrossTab:Header:JSON_Name3:project.self:Concat:" type="V_WString" />
+                <Field name="recipient_address" size="2048" source="CrossTab:Header:JSON_Name3:recipient.address:Concat:" type="V_WString" />
+                <Field name="recipient_attention_customerContactNumber" size="2048" source="CrossTab:Header:JSON_Name3:recipient.attention.customerContactNumber:Concat:" type="V_WString" />
+                <Field name="recipient_attention_self" size="2048" source="CrossTab:Header:JSON_Name3:recipient.attention.self:Concat:" type="V_WString" />
+                <Field name="recipient_city" size="2048" source="CrossTab:Header:JSON_Name3:recipient.city:Concat:" type="V_WString" />
+                <Field name="recipient_country" size="2048" source="CrossTab:Header:JSON_Name3:recipient.country:Concat:" type="V_WString" />
+                <Field name="recipient_ean" size="2048" source="CrossTab:Header:JSON_Name3:recipient.ean:Concat:" type="V_WString" />
+                <Field name="recipient_name" size="2048" source="CrossTab:Header:JSON_Name3:recipient.name:Concat:" type="V_WString" />
+                <Field name="recipient_publicEntryNumber" size="2048" source="CrossTab:Header:JSON_Name3:recipient.publicEntryNumber:Concat:" type="V_WString" />
+                <Field name="recipient_vatZone_enabledForCustomer" size="2048" source="CrossTab:Header:JSON_Name3:recipient.vatZone.enabledForCustomer:Concat:" type="V_WString" />
+                <Field name="recipient_vatZone_enabledForSupplier" size="2048" source="CrossTab:Header:JSON_Name3:recipient.vatZone.enabledForSupplier:Concat:" type="V_WString" />
+                <Field name="recipient_vatZone_name" size="2048" source="CrossTab:Header:JSON_Name3:recipient.vatZone.name:Concat:" type="V_WString" />
+                <Field name="recipient_vatZone_self" size="2048" source="CrossTab:Header:JSON_Name3:recipient.vatZone.self:Concat:" type="V_WString" />
+                <Field name="recipient_vatZone_vatZoneNumber" size="2048" source="CrossTab:Header:JSON_Name3:recipient.vatZone.vatZoneNumber:Concat:" type="V_WString" />
+                <Field name="recipient_zip" size="2048" source="CrossTab:Header:JSON_Name3:recipient.zip:Concat:" type="V_WString" />
+                <Field name="references_customerContact_customerContactNumber" size="2048" source="CrossTab:Header:JSON_Name3:references.customerContact.customerContactNumber:Concat:" type="V_WString" />
+                <Field name="references_customerContact_self" size="2048" source="CrossTab:Header:JSON_Name3:references.customerContact.self:Concat:" type="V_WString" />
+                <Field name="references_other" size="2048" source="CrossTab:Header:JSON_Name3:references.other:Concat:" type="V_WString" />
+                <Field name="references_salesPerson_employeeNumber" size="2048" source="CrossTab:Header:JSON_Name3:references.salesPerson.employeeNumber:Concat:" type="V_WString" />
+                <Field name="references_salesPerson_self" size="2048" source="CrossTab:Header:JSON_Name3:references.salesPerson.self:Concat:" type="V_WString" />
+                <Field name="references_vendorReference_employeeNumber" size="2048" source="CrossTab:Header:JSON_Name3:references.vendorReference.employeeNumber:Concat:" type="V_WString" />
+                <Field name="references_vendorReference_self" size="2048" source="CrossTab:Header:JSON_Name3:references.vendorReference.self:Concat:" type="V_WString" />
+                <Field name="remainder" size="2048" source="CrossTab:Header:JSON_Name3:remainder:Concat:" type="V_WString" />
+                <Field name="remainderInBaseCurrency" size="2048" source="CrossTab:Header:JSON_Name3:remainderInBaseCurrency:Concat:" type="V_WString" />
+                <Field name="roundingAmount" size="2048" source="CrossTab:Header:JSON_Name3:roundingAmount:Concat:" type="V_WString" />
+                <Field name="self" size="2048" source="CrossTab:Header:JSON_Name3:self:Concat:" type="V_WString" />
+                <Field name="sent" size="2048" source="CrossTab:Header:JSON_Name3:sent:Concat:" type="V_WString" />
+                <Field name="vatAmount" size="2048" source="CrossTab:Header:JSON_Name3:vatAmount:Concat:" type="V_WString" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="company_id" order="Asc" />
+                <Field field="Page" order="Asc" />
+                <Field field="JSON_Name2" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Message.Message">
+            <Position x="702" y="642" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <When>Filter</When>
+              <Filter>!Contains([DownloadHeaders], "200")</Filter>
+              <Type>Message</Type>
+              <Priority>Normal</Priority>
+              <Transient>True</Transient>
+              <MessageExpression>"Download error"</MessageExpression>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="X-AppSecretToken" size="44" source="TextInput:" type="String" />
+                <Field name="X-AgreementGrantToken" size="44" source="TextInput:" type="String" />
+                <Field name="company_id" size="24" source="TextInput:" type="V_String" />
+                <Field name="url" size="200" source="Formula: [url] + &quot;&amp;skippages=&quot; + [Page]" type="V_WString" />
+                <Field description="RegEx: Parsed from JSON_ValueString" name="count" size="200" source="RegEx: Parsed from JSON_ValueString" type="V_WString" />
+                <Field name="Page" size="200" type="V_WString" />
+                <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMessage" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="318" y="570" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="company_id" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="company_id" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_company_id" selected="False" rename="Right_company_id" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Left">
+              <RecordInfo>
+                <Field name="X-AppSecretToken" size="44" source="TextInput:" type="String" />
+                <Field name="X-AgreementGrantToken" size="44" source="TextInput:" type="String" />
+                <Field name="company_id" size="24" source="TextInput:" type="V_String" />
+                <Field name="url" size="59" source="TextInput:" type="String" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="company_id" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Join">
+              <RecordInfo>
+                <Field name="X-AppSecretToken" size="44" source="TextInput:" type="String" />
+                <Field name="X-AgreementGrantToken" size="44" source="TextInput:" type="String" />
+                <Field name="company_id" size="24" source="TextInput:" type="V_String" />
+                <Field name="url" size="59" source="TextInput:" type="String" />
+                <Field description="RegEx: Parsed from JSON_ValueString" name="count" source="RegEx: Parsed from JSON_ValueString" type="Int64" />
+                <Field name="Page" type="Int32" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="company_id" order="" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Right">
+              <RecordInfo>
+                <Field name="company_id" size="24" source="TextInput:" type="V_String" />
+                <Field description="RegEx: Parsed from JSON_ValueString" name="count" source="RegEx: Parsed from JSON_ValueString" type="Int64" />
+                <Field name="Page" type="Int32" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="company_id" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="414" y="570" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="url" selected="True" type="V_WString" size="200" />
+                <SelectField field="count" selected="True" type="V_WString" size="200" />
+                <SelectField field="Page" selected="True" type="V_WString" size="200" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="X-AppSecretToken" size="44" source="TextInput:" type="String" />
+                <Field name="X-AgreementGrantToken" size="44" source="TextInput:" type="String" />
+                <Field name="company_id" size="24" source="TextInput:" type="V_String" />
+                <Field name="url" size="200" source="TextInput:" type="V_WString" />
+                <Field description="RegEx: Parsed from JSON_ValueString" name="count" size="200" source="RegEx: Parsed from JSON_ValueString" type="V_WString" />
+                <Field name="Page" size="200" type="V_WString" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="company_id" order="" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="401" y="197" width="661" height="237" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Idenfication of pagination (how many pages?)</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
+            <Position x="426" y="318" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <URLField>url</URLField>
+              <OutputMode>String</OutputMode>
+              <CodePage>65001</CodePage>
+              <EncodeURLs value="True" />
+              <Headers>
+                <NameValues>
+                  <Item name="Agent" value="application/json" />
+                </NameValues>
+                <Fields orderChanged="False">
+                  <Field name="X-AppSecretToken" />
+                  <Field name="X-AgreementGrantToken" />
+                  <Field name="company_id" selected="False" />
+                  <Field name="url" selected="False" />
+                  <Field name="*Unknown" selected="False" />
+                </Fields>
+              </Headers>
+              <Payload>
+                <HTTPAction>GET</HTTPAction>
+                <QueryStringBodyMode>Compose</QueryStringBodyMode>
+                <ComposeNameValues />
+                <ComposeFields orderChanged="False">
+                  <Field name="X-AppSecretToken" selected="False" />
+                  <Field name="X-AgreementGrantToken" selected="False" />
+                  <Field name="company_id" selected="False" />
+                  <Field name="url" selected="False" />
+                  <Field name="*Unknown" selected="False" />
+                </ComposeFields>
+              </Payload>
+              <UserName />
+              <Password />
+              <numConnections>32</numConnections>
+              <Timeout>600</Timeout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="X-AppSecretToken" size="44" source="TextInput:" type="String" />
+                <Field name="X-AgreementGrantToken" size="44" source="TextInput:" type="String" />
+                <Field name="company_id" size="24" source="TextInput:" type="V_String" />
+                <Field name="url" size="59" source="TextInput:" type="String" />
+                <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxDownload" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.JSONParse.JSONParse">
+            <Position x="546" y="318" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <JSON_Field>DownloadData</JSON_Field>
+              <IncludeInOutput value="False" />
+              <SingleField value="True" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="X-AppSecretToken" size="44" source="TextInput:" type="String" />
+                <Field name="X-AgreementGrantToken" size="44" source="TextInput:" type="String" />
+                <Field name="company_id" size="24" source="TextInput:" type="V_String" />
+                <Field name="url" size="59" source="TextInput:" type="String" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJSONParse" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="642" y="318" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="X-AppSecretToken" selected="False" />
+                <SelectField field="X-AgreementGrantToken" selected="False" />
+                <SelectField field="url" selected="False" />
+                <SelectField field="DownloadHeaders" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="company_id" size="24" source="TextInput:" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+            <Position x="762" y="318" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>JSON_Name</Field>
+              <ErrorHandling>Last</ErrorHandling>
+              <RootName>JSON_Name</RootName>
+              <Delimeters value="." />
+              <NumFields value="3" />
+              <Flags value="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="company_id" size="24" source="TextInput:" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name1" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name2" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name3" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="882" y="318" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>JSON_Name2</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2018-06-19 14:58:36</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>lastPage</Operand>
+                  <StartDate>2018-06-19 14:58:36</StartDate>
+                  <EndDate>2018-06-19 14:58:36</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[JSON_Name2] = "lastPage"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="company_id" size="24" source="TextInput:" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name1" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name2" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name3" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="company_id" size="24" source="TextInput:" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name1" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name2" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name3" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+            <Position x="978" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>JSON_ValueString</Field>
+              <RegExExpression value="(\d+$)" />
+              <CaseInsensitve value="True" />
+              <Method>ParseComplex</Method>
+              <Replace expression="">
+                <CopyUnmatched value="True" />
+              </Replace>
+              <ParseSimple>
+                <SplitToRows value="False" />
+                <RootName>
+                </RootName>
+                <NumFields value="3" />
+                <ErrorHandling>Warn</ErrorHandling>
+              </ParseSimple>
+              <ParseComplex>
+                <Field field="RegExOut1" type="V_WString" size="254" />
+              </ParseComplex>
+              <Match>
+                <Field>url_Matched</Field>
+                <ErrorUnmatched value="False" />
+              </Match>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="company_id" size="24" source="TextInput:" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name1" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name2" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name3" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="RegEx: Parsed from JSON_ValueString" name="RegExOut1" size="254" source="RegEx: Parsed from JSON_ValueString" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Message.Message">
+            <Position x="558" y="246" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <When>Filter</When>
+              <Filter>!Contains([DownloadHeaders], "200")</Filter>
+              <Type>Message</Type>
+              <Priority>Normal</Priority>
+              <Transient>True</Transient>
+              <MessageExpression>"Download error"</MessageExpression>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="X-AppSecretToken" size="44" source="TextInput:" type="String" />
+                <Field name="X-AgreementGrantToken" size="44" source="TextInput:" type="String" />
+                <Field name="company_id" size="24" source="TextInput:" type="V_String" />
+                <Field name="url" size="59" source="TextInput:" type="String" />
+                <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMessage" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="58" y="197" width="320" height="217" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Input</Caption>
+          <Style TextColor="#314c4a" FillColor="#80ff80" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="294" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Allow</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="X-AppSecretToken" size="44" source="TextInput:" type="String" />
+                <Field name="X-AgreementGrantToken" size="44" source="TextInput:" type="String" />
+                <Field name="company_id" size="24" source="TextInput:" type="V_String" />
+                <Field name="url" size="59" source="TextInput:" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+            <Position x="162" y="330" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UseFileInput value="False" />
+              <Name>url</Name>
+              <Abbrev>u</Abbrev>
+              <ShowFieldMap value="True" />
+              <Optional value="False" />
+              <TextInput>
+                <Configuration>
+                  <NumRows value="1" />
+                  <Fields>
+                    <Field name="url" />
+                  </Fields>
+                  <Data>
+                    <r>
+                      <c>https://restapi.e-conomic.com/invoices/booked?pageSize=1000</c>
+                    </r>
+                  </Data>
+                </Configuration>
+              </TextInput>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>URL Endpoint</AnnotationText>
+              <DefaultAnnotationText>u Input</DefaultAnnotationText>
+              <Left value="True" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="url" size="59" source="TextInput:" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+        </Node>
+        <Node ToolID="29">
+          <GuiSettings>
+            <Position x="162" y="246" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name>EconomicAuthentication (28)</Name>
+              <AnnotationText><![CDATA[Credentials ]]></AnnotationText>
+              <DefaultAnnotationText><![CDATA[Credentials ]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output11">
+              <RecordInfo>
+                <Field name="X-AppSecretToken" size="44" source="TextInput:" type="String" />
+                <Field name="X-AgreementGrantToken" size="44" source="TextInput:" type="String" />
+                <Field name="company_id" size="24" source="TextInput:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro=".\\EconomicAuthentication.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="21" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="21" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="True" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="1" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Join" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="True" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="3" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output11" />
+      <Destination ToolID="3" Connection="Targets" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>StandardPaginatedEconomicDownload</Name>
+      <Description><![CDATA[Description: This macro allows you to download from Zibra's Economics system (https://restdocs.e-conomic.com/#introduction). This macro can be used for most standard endpoints that have last page ind their output. 
+
+First this workflows determines how many records that need to be downloaded and then it downloads them. (Pagination). ]]></Description>
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author>msm@zibra.dk</Author>
+      <Company>Zibra (FInance)</Company>
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (24)</Name>
+          <ToolId value="24" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Macro Input (25)</Description>
+              <Name>Macro Input (25)</Name>
+              <ToolId value="25" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (26)</Description>
+              <Name>Macro Output (26)</Name>
+              <ToolId value="26" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImage>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</MacroImage>
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="25" Selected="True" />
+        <Tool ToolId="26" Selected="True" />
+        <Tool ToolId="29" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

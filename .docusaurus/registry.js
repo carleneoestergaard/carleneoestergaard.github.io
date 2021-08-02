@@ -31,6 +31,7 @@ export default {
   'bdd709f1': [() => import(/* webpackChunkName: 'bdd709f1' */ "@site/blog/2019-05-28-hola.md"), "@site/blog/2019-05-28-hola.md", require.resolveWeak("@site/blog/2019-05-28-hola.md")],
   'c4f5d8e4': [() => import(/* webpackChunkName: 'c4f5d8e4' */ "@site/src/pages/index.js"), "@site/src/pages/index.js", require.resolveWeak("@site/src/pages/index.js")],
   'ccc49370': [() => import(/* webpackChunkName: 'ccc49370' */ "@theme/BlogPostPage"), "@theme/BlogPostPage", require.resolveWeak("@theme/BlogPostPage")],
+  'd095925e': [() => import(/* webpackChunkName: 'd095925e' */ "@site/docs/Connections/Economic.md"), "@site/docs/Connections/Economic.md", require.resolveWeak("@site/docs/Connections/Economic.md")],
   'd610846f': [() => import(/* webpackChunkName: 'd610846f' */ "@site/blog/2019-05-29-hello-world.md"), "@site/blog/2019-05-29-hello-world.md", require.resolveWeak("@site/blog/2019-05-29-hello-world.md")],
   'dff1c289': [() => import(/* webpackChunkName: 'dff1c289' */ "@site/docs/tutorial-extras/manage-docs-versions.md"), "@site/docs/tutorial-extras/manage-docs-versions.md", require.resolveWeak("@site/docs/tutorial-extras/manage-docs-versions.md")],
   'e44a2883': [() => import(/* webpackChunkName: 'e44a2883' */ "@site/docs/tutorial-extras/translate-your-site.md"), "@site/docs/tutorial-extras/translate-your-site.md", require.resolveWeak("@site/docs/tutorial-extras/translate-your-site.md")],

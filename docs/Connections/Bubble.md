@@ -1,6 +1,6 @@
 # Bubble
 
-Connecting to Bubblie.io is a fairly straightfoward API with API keys. 
+Connecting to Bubblie.io is a fairly straightfoward API with an API auth token. 
 
 ## Macro
 

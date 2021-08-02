@@ -69,12 +69,17 @@ export default [
 },
 {
   path: '/build/docs',
-  component: ComponentCreator('/build/docs','115'),
+  component: ComponentCreator('/build/docs','f3a'),
   
   routes: [
 {
   path: '/build/docs/Connections/Bubble',
   component: ComponentCreator('/build/docs/Connections/Bubble','dda'),
+  exact: true,
+},
+{
+  path: '/build/docs/Connections/Economic',
+  component: ComponentCreator('/build/docs/Connections/Economic','82d'),
   exact: true,
 },
 {

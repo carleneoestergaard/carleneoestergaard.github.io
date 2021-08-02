@@ -1,0 +1,23 @@
+{
+  "unversionedId": "Connections/Economic",
+  "id": "Connections/Economic",
+  "isDocsHomePage": false,
+  "title": "Economic",
+  "description": "Download the macros here",
+  "source": "@site/docs/Connections/Economic.md",
+  "sourceDirName": "Connections",
+  "slug": "/Connections/Economic",
+  "permalink": "/build/docs/Connections/Economic",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/Connections/Economic.md",
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Bubble",
+    "permalink": "/build/docs/Connections/Bubble"
+  },
+  "next": {
+    "title": "Maconomy",
+    "permalink": "/build/docs/Connections/Maconomy"
+  }
+}

@@ -61,6 +61,10 @@
                   },
                   {
                     "type": "doc",
+                    "id": "Connections/Economic"
+                  },
+                  {
+                    "type": "doc",
                     "id": "Connections/Maconomy"
                   },
                   {
@@ -89,6 +93,7 @@
           },
           "permalinkToSidebar": {
             "/build/docs/Connections/Bubble": "tutorialSidebar",
+            "/build/docs/Connections/Economic": "tutorialSidebar",
             "/build/docs/Connections/Maconomy": "tutorialSidebar",
             "/build/docs/Connections/Snowflake": "tutorialSidebar",
             "/build/docs/intro": "tutorialSidebar",
@@ -107,7 +112,7 @@
               "id": "Connections/Bubble",
               "isDocsHomePage": false,
               "title": "Bubble",
-              "description": "Connecting to Bubblie.io is a fairly straightfoward API with API keys.",
+              "description": "Connecting to Bubblie.io is a fairly straightfoward API with an API auth token.",
               "source": "@site/docs/Connections/Bubble.md",
               "sourceDirName": "Connections",
               "slug": "/Connections/Bubble",
@@ -121,6 +126,29 @@
                 "permalink": "/build/docs/tutorial-basics/congratulations"
               },
               "next": {
+                "title": "Economic",
+                "permalink": "/build/docs/Connections/Economic"
+              }
+            },
+            {
+              "unversionedId": "Connections/Economic",
+              "id": "Connections/Economic",
+              "isDocsHomePage": false,
+              "title": "Economic",
+              "description": "Download the macros here",
+              "source": "@site/docs/Connections/Economic.md",
+              "sourceDirName": "Connections",
+              "slug": "/Connections/Economic",
+              "permalink": "/build/docs/Connections/Economic",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/Connections/Economic.md",
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Bubble",
+                "permalink": "/build/docs/Connections/Bubble"
+              },
+              "next": {
                 "title": "Maconomy",
                 "permalink": "/build/docs/Connections/Maconomy"
               }
@@ -130,7 +158,7 @@
               "id": "Connections/Maconomy",
               "isDocsHomePage": false,
               "title": "Maconomy",
-              "description": "",
+              "description": "To connect to maconomy you should be able to use a standard ODBC connection",
               "source": "@site/docs/Connections/Maconomy.md",
               "sourceDirName": "Connections",
               "slug": "/Connections/Maconomy",
@@ -140,8 +168,8 @@
               "frontMatter": {},
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Bubble",
-                "permalink": "/build/docs/Connections/Bubble"
+                "title": "Economic",
+                "permalink": "/build/docs/Connections/Economic"
               },
               "next": {
                 "title": "Snowflake",

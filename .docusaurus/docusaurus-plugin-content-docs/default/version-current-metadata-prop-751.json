@@ -58,6 +58,11 @@
           },
           {
             "type": "link",
+            "label": "Economic",
+            "href": "/build/docs/Connections/Economic"
+          },
+          {
+            "type": "link",
             "label": "Maconomy",
             "href": "/build/docs/Connections/Maconomy"
           },
@@ -90,6 +95,7 @@
   },
   "permalinkToSidebar": {
     "/build/docs/Connections/Bubble": "tutorialSidebar",
+    "/build/docs/Connections/Economic": "tutorialSidebar",
     "/build/docs/Connections/Maconomy": "tutorialSidebar",
     "/build/docs/Connections/Snowflake": "tutorialSidebar",
     "/build/docs/intro": "tutorialSidebar",
