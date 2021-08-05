@@ -13,11 +13,11 @@
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Maconomy",
-    "permalink": "/build/docs/Connections/Maconomy"
+    "title": "Microsoft Dynamics",
+    "permalink": "/build/docs/Connections/Microsoft Dynamics"
   },
   "next": {
-    "title": "Snowflake",
-    "permalink": "/build/docs/Connections/Snowflake"
+    "title": "Rackbeat",
+    "permalink": "/build/docs/Connections/Rackbeat"
   }
 }

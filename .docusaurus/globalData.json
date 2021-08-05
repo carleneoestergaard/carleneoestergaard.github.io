@@ -21,13 +21,33 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "Connections/Forecast",
+              "path": "/build/docs/Connections/Forecast",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Connections/Hubspot",
+              "path": "/build/docs/Connections/Hubspot",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "Connections/Maconomy",
               "path": "/build/docs/Connections/Maconomy",
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "Connections/Microsoft Dynamics",
+              "path": "/build/docs/Connections/Microsoft Dynamics",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "Connections/Oracle",
               "path": "/build/docs/Connections/Oracle",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Connections/Rackbeat",
+              "path": "/build/docs/Connections/Rackbeat",
               "sidebar": "tutorialSidebar"
             },
             {

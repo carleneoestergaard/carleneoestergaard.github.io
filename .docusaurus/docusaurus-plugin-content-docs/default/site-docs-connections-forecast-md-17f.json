@@ -1,0 +1,23 @@
+{
+  "unversionedId": "Connections/Forecast",
+  "id": "Connections/Forecast",
+  "isDocsHomePage": false,
+  "title": "Forecast",
+  "description": "As Forecast dosen't have an official public API, we use one of the multiple third-party applications available. In this case we use the API client for Go, which dosen't require any downloads.",
+  "source": "@site/docs/Connections/Forecast.md",
+  "sourceDirName": "Connections",
+  "slug": "/Connections/Forecast",
+  "permalink": "/build/docs/Connections/Forecast",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/Connections/Forecast.md",
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Economic",
+    "permalink": "/build/docs/Connections/Economic"
+  },
+  "next": {
+    "title": "Hubspot",
+    "permalink": "/build/docs/Connections/Hubspot"
+  }
+}

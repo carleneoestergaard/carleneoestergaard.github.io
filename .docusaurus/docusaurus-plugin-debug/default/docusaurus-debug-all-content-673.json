@@ -10,9 +10,9 @@
           "versionEditUrlLocalized": "https://github.com/facebook/docusaurus/edit/master/website/i18n/en/docusaurus-plugin-content-docs/current",
           "isLast": true,
           "routePriority": -1,
-          "sidebarFilePath": "/Users/carlenejones/GitHub/carleneoestergaard.github.io/sidebars.js",
-          "contentPath": "/Users/carlenejones/GitHub/carleneoestergaard.github.io/docs",
-          "contentPathLocalized": "/Users/carlenejones/GitHub/carleneoestergaard.github.io/i18n/en/docusaurus-plugin-content-docs/current",
+          "sidebarFilePath": "/Users/holgermauritzen/Documents/GitHub/carleneoestergaard.github.io/sidebars.js",
+          "contentPath": "/Users/holgermauritzen/Documents/GitHub/carleneoestergaard.github.io/docs",
+          "contentPathLocalized": "/Users/holgermauritzen/Documents/GitHub/carleneoestergaard.github.io/i18n/en/docusaurus-plugin-content-docs/current",
           "mainDocId": "intro",
           "sidebars": {
             "tutorialSidebar": [
@@ -65,11 +65,27 @@
                   },
                   {
                     "type": "doc",
+                    "id": "Connections/Forecast"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Connections/Hubspot"
+                  },
+                  {
+                    "type": "doc",
                     "id": "Connections/Maconomy"
                   },
                   {
                     "type": "doc",
+                    "id": "Connections/Microsoft Dynamics"
+                  },
+                  {
+                    "type": "doc",
                     "id": "Connections/Oracle"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Connections/Rackbeat"
                   },
                   {
                     "type": "doc",
@@ -102,8 +118,12 @@
           "permalinkToSidebar": {
             "/build/docs/Connections/Bubble": "tutorialSidebar",
             "/build/docs/Connections/Economic": "tutorialSidebar",
+            "/build/docs/Connections/Forecast": "tutorialSidebar",
+            "/build/docs/Connections/Hubspot": "tutorialSidebar",
             "/build/docs/Connections/Maconomy": "tutorialSidebar",
+            "/build/docs/Connections/Microsoft Dynamics": "tutorialSidebar",
             "/build/docs/Connections/Oracle": "tutorialSidebar",
+            "/build/docs/Connections/Rackbeat": "tutorialSidebar",
             "/build/docs/Connections/Snowflake": "tutorialSidebar",
             "/build/docs/Connections/WebCRM": "tutorialSidebar",
             "/build/docs/intro": "tutorialSidebar",
@@ -159,6 +179,52 @@
                 "permalink": "/build/docs/Connections/Bubble"
               },
               "next": {
+                "title": "Forecast",
+                "permalink": "/build/docs/Connections/Forecast"
+              }
+            },
+            {
+              "unversionedId": "Connections/Forecast",
+              "id": "Connections/Forecast",
+              "isDocsHomePage": false,
+              "title": "Forecast",
+              "description": "As Forecast dosen't have an official public API, we use one of the multiple third-party applications available. In this case we use the API client for Go, which dosen't require any downloads.",
+              "source": "@site/docs/Connections/Forecast.md",
+              "sourceDirName": "Connections",
+              "slug": "/Connections/Forecast",
+              "permalink": "/build/docs/Connections/Forecast",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/Connections/Forecast.md",
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Economic",
+                "permalink": "/build/docs/Connections/Economic"
+              },
+              "next": {
+                "title": "Hubspot",
+                "permalink": "/build/docs/Connections/Hubspot"
+              }
+            },
+            {
+              "unversionedId": "Connections/Hubspot",
+              "id": "Connections/Hubspot",
+              "isDocsHomePage": false,
+              "title": "Hubspot",
+              "description": "",
+              "source": "@site/docs/Connections/Hubspot.md",
+              "sourceDirName": "Connections",
+              "slug": "/Connections/Hubspot",
+              "permalink": "/build/docs/Connections/Hubspot",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/Connections/Hubspot.md",
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Forecast",
+                "permalink": "/build/docs/Connections/Forecast"
+              },
+              "next": {
                 "title": "Maconomy",
                 "permalink": "/build/docs/Connections/Maconomy"
               }
@@ -168,7 +234,7 @@
               "id": "Connections/Maconomy",
               "isDocsHomePage": false,
               "title": "Maconomy",
-              "description": "To connect to maconomy you should be able to use a standard ODBC connection",
+              "description": "To connect to maconomy you should be able to use a standard ODBC connection. This is very good",
               "source": "@site/docs/Connections/Maconomy.md",
               "sourceDirName": "Connections",
               "slug": "/Connections/Maconomy",
@@ -178,8 +244,31 @@
               "frontMatter": {},
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Economic",
-                "permalink": "/build/docs/Connections/Economic"
+                "title": "Hubspot",
+                "permalink": "/build/docs/Connections/Hubspot"
+              },
+              "next": {
+                "title": "Microsoft Dynamics",
+                "permalink": "/build/docs/Connections/Microsoft Dynamics"
+              }
+            },
+            {
+              "unversionedId": "Connections/Microsoft Dynamics",
+              "id": "Connections/Microsoft Dynamics",
+              "isDocsHomePage": false,
+              "title": "Microsoft Dynamics",
+              "description": "Alteryx to Microsoft Dynamics CRM",
+              "source": "@site/docs/Connections/Microsoft Dynamics.md",
+              "sourceDirName": "Connections",
+              "slug": "/Connections/Microsoft Dynamics",
+              "permalink": "/build/docs/Connections/Microsoft Dynamics",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/Connections/Microsoft Dynamics.md",
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Maconomy",
+                "permalink": "/build/docs/Connections/Maconomy"
               },
               "next": {
                 "title": "Oracle Databases",
@@ -201,8 +290,31 @@
               "frontMatter": {},
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Maconomy",
-                "permalink": "/build/docs/Connections/Maconomy"
+                "title": "Microsoft Dynamics",
+                "permalink": "/build/docs/Connections/Microsoft Dynamics"
+              },
+              "next": {
+                "title": "Rackbeat",
+                "permalink": "/build/docs/Connections/Rackbeat"
+              }
+            },
+            {
+              "unversionedId": "Connections/Rackbeat",
+              "id": "Connections/Rackbeat",
+              "isDocsHomePage": false,
+              "title": "Rackbeat",
+              "description": "Connecting to the Rackbeat API is quite straigtforward.",
+              "source": "@site/docs/Connections/Rackbeat.md",
+              "sourceDirName": "Connections",
+              "slug": "/Connections/Rackbeat",
+              "permalink": "/build/docs/Connections/Rackbeat",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/Connections/Rackbeat.md",
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Oracle Databases",
+                "permalink": "/build/docs/Connections/Oracle"
               },
               "next": {
                 "title": "Snowflake",
@@ -214,7 +326,7 @@
               "id": "Connections/Snowflake",
               "isDocsHomePage": false,
               "title": "Snowflake",
-              "description": "Here is snowflake documentation",
+              "description": "Snowflake integration with Alteryx is quite straightforward, as well as being constantly improved.",
               "source": "@site/docs/Connections/Snowflake.md",
               "sourceDirName": "Connections",
               "slug": "/Connections/Snowflake",
@@ -224,8 +336,8 @@
               "frontMatter": {},
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Oracle Databases",
-                "permalink": "/build/docs/Connections/Oracle"
+                "title": "Rackbeat",
+                "permalink": "/build/docs/Connections/Rackbeat"
               },
               "next": {
                 "title": "WebCRM",

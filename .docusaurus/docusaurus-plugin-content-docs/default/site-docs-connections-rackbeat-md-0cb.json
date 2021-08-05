@@ -1,0 +1,23 @@
+{
+  "unversionedId": "Connections/Rackbeat",
+  "id": "Connections/Rackbeat",
+  "isDocsHomePage": false,
+  "title": "Rackbeat",
+  "description": "Connecting to the Rackbeat API is quite straigtforward.",
+  "source": "@site/docs/Connections/Rackbeat.md",
+  "sourceDirName": "Connections",
+  "slug": "/Connections/Rackbeat",
+  "permalink": "/build/docs/Connections/Rackbeat",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/Connections/Rackbeat.md",
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Oracle Databases",
+    "permalink": "/build/docs/Connections/Oracle"
+  },
+  "next": {
+    "title": "Snowflake",
+    "permalink": "/build/docs/Connections/Snowflake"
+  }
+}

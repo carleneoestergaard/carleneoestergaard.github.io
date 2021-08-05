@@ -1,0 +1,23 @@
+{
+  "unversionedId": "Connections/Hubspot",
+  "id": "Connections/Hubspot",
+  "isDocsHomePage": false,
+  "title": "Hubspot",
+  "description": "",
+  "source": "@site/docs/Connections/Hubspot.md",
+  "sourceDirName": "Connections",
+  "slug": "/Connections/Hubspot",
+  "permalink": "/build/docs/Connections/Hubspot",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/Connections/Hubspot.md",
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Forecast",
+    "permalink": "/build/docs/Connections/Forecast"
+  },
+  "next": {
+    "title": "Maconomy",
+    "permalink": "/build/docs/Connections/Maconomy"
+  }
+}

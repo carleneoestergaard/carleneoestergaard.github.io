@@ -3,7 +3,7 @@
   "id": "Connections/Maconomy",
   "isDocsHomePage": false,
   "title": "Maconomy",
-  "description": "To connect to maconomy you should be able to use a standard ODBC connection",
+  "description": "To connect to maconomy you should be able to use a standard ODBC connection. This is very good",
   "source": "@site/docs/Connections/Maconomy.md",
   "sourceDirName": "Connections",
   "slug": "/Connections/Maconomy",
@@ -13,11 +13,11 @@
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Economic",
-    "permalink": "/build/docs/Connections/Economic"
+    "title": "Hubspot",
+    "permalink": "/build/docs/Connections/Hubspot"
   },
   "next": {
-    "title": "Oracle Databases",
-    "permalink": "/build/docs/Connections/Oracle"
+    "title": "Microsoft Dynamics",
+    "permalink": "/build/docs/Connections/Microsoft Dynamics"
   }
 }

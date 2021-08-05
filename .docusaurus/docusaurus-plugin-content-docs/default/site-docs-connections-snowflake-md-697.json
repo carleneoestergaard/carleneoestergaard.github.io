@@ -3,7 +3,7 @@
   "id": "Connections/Snowflake",
   "isDocsHomePage": false,
   "title": "Snowflake",
-  "description": "Here is snowflake documentation",
+  "description": "Snowflake integration with Alteryx is quite straightforward, as well as being constantly improved.",
   "source": "@site/docs/Connections/Snowflake.md",
   "sourceDirName": "Connections",
   "slug": "/Connections/Snowflake",
@@ -13,8 +13,8 @@
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Oracle Databases",
-    "permalink": "/build/docs/Connections/Oracle"
+    "title": "Rackbeat",
+    "permalink": "/build/docs/Connections/Rackbeat"
   },
   "next": {
     "title": "WebCRM",

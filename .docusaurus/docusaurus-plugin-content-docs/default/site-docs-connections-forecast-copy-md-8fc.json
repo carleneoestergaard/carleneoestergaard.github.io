@@ -1,0 +1,23 @@
+{
+  "unversionedId": "Connections/Forecast copy",
+  "id": "Connections/Forecast copy",
+  "isDocsHomePage": false,
+  "title": "Forecast",
+  "description": "As Forecast dosen't have an official public API, we use one of the multiple third-party applications available. In this case we use the API client for Go, which dosen't require any downloads.",
+  "source": "@site/docs/Connections/Forecast copy.md",
+  "sourceDirName": "Connections",
+  "slug": "/Connections/Forecast copy",
+  "permalink": "/build/docs/Connections/Forecast copy",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/Connections/Forecast copy.md",
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Economic",
+    "permalink": "/build/docs/Connections/Economic"
+  },
+  "next": {
+    "title": "Forecast",
+    "permalink": "/build/docs/Connections/Forecast"
+  }
+}

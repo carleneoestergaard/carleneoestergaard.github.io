@@ -63,13 +63,33 @@
           },
           {
             "type": "link",
+            "label": "Forecast",
+            "href": "/build/docs/Connections/Forecast"
+          },
+          {
+            "type": "link",
+            "label": "Hubspot",
+            "href": "/build/docs/Connections/Hubspot"
+          },
+          {
+            "type": "link",
             "label": "Maconomy",
             "href": "/build/docs/Connections/Maconomy"
           },
           {
             "type": "link",
+            "label": "Microsoft Dynamics",
+            "href": "/build/docs/Connections/Microsoft Dynamics"
+          },
+          {
+            "type": "link",
             "label": "Oracle Databases",
             "href": "/build/docs/Connections/Oracle"
+          },
+          {
+            "type": "link",
+            "label": "Rackbeat",
+            "href": "/build/docs/Connections/Rackbeat"
           },
           {
             "type": "link",
@@ -106,8 +126,12 @@
   "permalinkToSidebar": {
     "/build/docs/Connections/Bubble": "tutorialSidebar",
     "/build/docs/Connections/Economic": "tutorialSidebar",
+    "/build/docs/Connections/Forecast": "tutorialSidebar",
+    "/build/docs/Connections/Hubspot": "tutorialSidebar",
     "/build/docs/Connections/Maconomy": "tutorialSidebar",
+    "/build/docs/Connections/Microsoft Dynamics": "tutorialSidebar",
     "/build/docs/Connections/Oracle": "tutorialSidebar",
+    "/build/docs/Connections/Rackbeat": "tutorialSidebar",
     "/build/docs/Connections/Snowflake": "tutorialSidebar",
     "/build/docs/Connections/WebCRM": "tutorialSidebar",
     "/build/docs/intro": "tutorialSidebar",

@@ -112,7 +112,7 @@ export default {
       "@docusaurus/preset-classic",
       {
         "docs": {
-          "sidebarPath": "/Users/carlenejones/GitHub/carleneoestergaard.github.io/sidebars.js",
+          "sidebarPath": "/Users/holgermauritzen/Documents/GitHub/carleneoestergaard.github.io/sidebars.js",
           "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/"
         },
         "blog": {
@@ -120,7 +120,7 @@ export default {
           "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/blog/"
         },
         "theme": {
-          "customCss": "/Users/carlenejones/GitHub/carleneoestergaard.github.io/src/css/custom.css"
+          "customCss": "/Users/holgermauritzen/Documents/GitHub/carleneoestergaard.github.io/src/css/custom.css"
         }
       }
     ]

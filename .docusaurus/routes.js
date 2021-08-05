@@ -8,83 +8,48 @@ export default [
   exact: true,
 },
 {
-  path: '/build/__docusaurus/debug',
-  component: ComponentCreator('/build/__docusaurus/debug','553'),
-  exact: true,
-},
-{
-  path: '/build/__docusaurus/debug/config',
-  component: ComponentCreator('/build/__docusaurus/debug/config','c66'),
-  exact: true,
-},
-{
-  path: '/build/__docusaurus/debug/content',
-  component: ComponentCreator('/build/__docusaurus/debug/content','c02'),
-  exact: true,
-},
-{
-  path: '/build/__docusaurus/debug/globalData',
-  component: ComponentCreator('/build/__docusaurus/debug/globalData','514'),
-  exact: true,
-},
-{
-  path: '/build/__docusaurus/debug/metadata',
-  component: ComponentCreator('/build/__docusaurus/debug/metadata','696'),
-  exact: true,
-},
-{
-  path: '/build/__docusaurus/debug/registry',
-  component: ComponentCreator('/build/__docusaurus/debug/registry','df9'),
-  exact: true,
-},
-{
-  path: '/build/__docusaurus/debug/routes',
-  component: ComponentCreator('/build/__docusaurus/debug/routes','03b'),
-  exact: true,
-},
-{
   path: '/build/blog',
-  component: ComponentCreator('/build/blog','313'),
+  component: ComponentCreator('/build/blog','930'),
   exact: true,
 },
 {
   path: '/build/blog/hello-world',
-  component: ComponentCreator('/build/blog/hello-world','45e'),
+  component: ComponentCreator('/build/blog/hello-world','f9d'),
   exact: true,
 },
 {
   path: '/build/blog/hola',
-  component: ComponentCreator('/build/blog/hola','e8b'),
+  component: ComponentCreator('/build/blog/hola','d75'),
   exact: true,
 },
 {
   path: '/build/blog/tags',
-  component: ComponentCreator('/build/blog/tags','126'),
+  component: ComponentCreator('/build/blog/tags','2f7'),
   exact: true,
 },
 {
   path: '/build/blog/tags/docusaurus',
-  component: ComponentCreator('/build/blog/tags/docusaurus','67b'),
+  component: ComponentCreator('/build/blog/tags/docusaurus','008'),
   exact: true,
 },
 {
   path: '/build/blog/tags/facebook',
-  component: ComponentCreator('/build/blog/tags/facebook','834'),
+  component: ComponentCreator('/build/blog/tags/facebook','954'),
   exact: true,
 },
 {
   path: '/build/blog/tags/hello',
-  component: ComponentCreator('/build/blog/tags/hello','15b'),
+  component: ComponentCreator('/build/blog/tags/hello','826'),
   exact: true,
 },
 {
   path: '/build/blog/tags/hola',
-  component: ComponentCreator('/build/blog/tags/hola','1f5'),
+  component: ComponentCreator('/build/blog/tags/hola','e31'),
   exact: true,
 },
 {
   path: '/build/blog/welcome',
-  component: ComponentCreator('/build/blog/welcome','bbd'),
+  component: ComponentCreator('/build/blog/welcome','c0a'),
   exact: true,
 },
 {
@@ -99,12 +64,12 @@ export default [
 },
 {
   path: '/build/search',
-  component: ComponentCreator('/build/search','aa4'),
+  component: ComponentCreator('/build/search','44c'),
   exact: true,
 },
 {
   path: '/build/docs',
-  component: ComponentCreator('/build/docs','661'),
+  component: ComponentCreator('/build/docs','61a'),
   
   routes: [
 {
@@ -118,13 +83,33 @@ export default [
   exact: true,
 },
 {
+  path: '/build/docs/Connections/Forecast',
+  component: ComponentCreator('/build/docs/Connections/Forecast','2e8'),
+  exact: true,
+},
+{
+  path: '/build/docs/Connections/Hubspot',
+  component: ComponentCreator('/build/docs/Connections/Hubspot','bc6'),
+  exact: true,
+},
+{
   path: '/build/docs/Connections/Maconomy',
   component: ComponentCreator('/build/docs/Connections/Maconomy','ece'),
   exact: true,
 },
 {
+  path: '/build/docs/Connections/Microsoft Dynamics',
+  component: ComponentCreator('/build/docs/Connections/Microsoft Dynamics','dd8'),
+  exact: true,
+},
+{
   path: '/build/docs/Connections/Oracle',
   component: ComponentCreator('/build/docs/Connections/Oracle','5a5'),
+  exact: true,
+},
+{
+  path: '/build/docs/Connections/Rackbeat',
+  component: ComponentCreator('/build/docs/Connections/Rackbeat','258'),
   exact: true,
 },
 {
