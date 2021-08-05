@@ -1,0 +1,1 @@
+(self.webpackChunkinviso=self.webpackChunkinviso||[]).push([[7953],{7645:function(s){"use strict";s.exports=JSON.parse('{"allTagsPath":"/build/blog/tags","slug":"docusaurus","name":"docusaurus","count":3,"permalink":"/build/blog/tags/docusaurus"}')}}]);
