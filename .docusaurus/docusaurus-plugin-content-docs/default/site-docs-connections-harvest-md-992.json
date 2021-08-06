@@ -1,0 +1,23 @@
+{
+  "unversionedId": "Connections/Harvest",
+  "id": "Connections/Harvest",
+  "isDocsHomePage": false,
+  "title": "Harvest",
+  "description": "",
+  "source": "@site/docs/Connections/Harvest.md",
+  "sourceDirName": "Connections",
+  "slug": "/Connections/Harvest",
+  "permalink": "/build/docs/Connections/Harvest",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/Connections/Harvest.md",
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Harvest",
+    "permalink": "/build/docs/Connections/Forecast"
+  },
+  "next": {
+    "title": "HubSpot",
+    "permalink": "/build/docs/Connections/HubSpot"
+  }
+}

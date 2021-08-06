@@ -44,52 +44,47 @@ export default [
 },
 {
   path: '/build/blog',
-  component: ComponentCreator('/build/blog','313'),
+  component: ComponentCreator('/build/blog','930'),
   exact: true,
 },
 {
   path: '/build/blog/hello-world',
-  component: ComponentCreator('/build/blog/hello-world','45e'),
+  component: ComponentCreator('/build/blog/hello-world','f9d'),
   exact: true,
 },
 {
   path: '/build/blog/hola',
-  component: ComponentCreator('/build/blog/hola','e8b'),
+  component: ComponentCreator('/build/blog/hola','d75'),
   exact: true,
 },
 {
   path: '/build/blog/tags',
-  component: ComponentCreator('/build/blog/tags','126'),
+  component: ComponentCreator('/build/blog/tags','2f7'),
   exact: true,
 },
 {
   path: '/build/blog/tags/docusaurus',
-  component: ComponentCreator('/build/blog/tags/docusaurus','67b'),
+  component: ComponentCreator('/build/blog/tags/docusaurus','008'),
   exact: true,
 },
 {
   path: '/build/blog/tags/facebook',
-  component: ComponentCreator('/build/blog/tags/facebook','834'),
+  component: ComponentCreator('/build/blog/tags/facebook','954'),
   exact: true,
 },
 {
   path: '/build/blog/tags/hello',
-  component: ComponentCreator('/build/blog/tags/hello','15b'),
+  component: ComponentCreator('/build/blog/tags/hello','826'),
   exact: true,
 },
 {
   path: '/build/blog/tags/hola',
-  component: ComponentCreator('/build/blog/tags/hola','1f5'),
+  component: ComponentCreator('/build/blog/tags/hola','e31'),
   exact: true,
 },
 {
   path: '/build/blog/welcome',
-  component: ComponentCreator('/build/blog/welcome','bbd'),
-  exact: true,
-},
-{
-  path: '/build/helloReact',
-  component: ComponentCreator('/build/helloReact','058'),
+  component: ComponentCreator('/build/blog/welcome','c0a'),
   exact: true,
 },
 {
@@ -98,35 +93,20 @@ export default [
   exact: true,
 },
 {
+  path: '/build/my-react-page',
+  component: ComponentCreator('/build/my-react-page','d92'),
+  exact: true,
+},
+{
   path: '/build/search',
-  component: ComponentCreator('/build/search','aa4'),
+  component: ComponentCreator('/build/search','44c'),
   exact: true,
 },
 {
   path: '/build/docs',
-  component: ComponentCreator('/build/docs','dc4'),
+  component: ComponentCreator('/build/docs','104'),
   
   routes: [
-{
-  path: '/build/docs/AlteryxAPI/frompowershell',
-  component: ComponentCreator('/build/docs/AlteryxAPI/frompowershell','4f5'),
-  exact: true,
-},
-{
-  path: '/build/docs/AlteryxAPI/frompython',
-  component: ComponentCreator('/build/docs/AlteryxAPI/frompython','dfb'),
-  exact: true,
-},
-{
-  path: '/build/docs/AlteryxAPI/general',
-  component: ComponentCreator('/build/docs/AlteryxAPI/general','7a4'),
-  exact: true,
-},
-{
-  path: '/build/docs/AlteryxAPI/permissions',
-  component: ComponentCreator('/build/docs/AlteryxAPI/permissions','cde'),
-  exact: true,
-},
 {
   path: '/build/docs/Connections/Bubble',
   component: ComponentCreator('/build/docs/Connections/Bubble','dda'),
@@ -138,13 +118,18 @@ export default [
   exact: true,
 },
 {
+  path: '/build/docs/Connections/Fixer.io',
+  component: ComponentCreator('/build/docs/Connections/Fixer.io','e73'),
+  exact: true,
+},
+{
   path: '/build/docs/Connections/Forecast',
   component: ComponentCreator('/build/docs/Connections/Forecast','2e8'),
   exact: true,
 },
 {
-  path: '/build/docs/Connections/Hubspot',
-  component: ComponentCreator('/build/docs/Connections/Hubspot','bc6'),
+  path: '/build/docs/Connections/HubSpot',
+  component: ComponentCreator('/build/docs/Connections/HubSpot','ec4'),
   exact: true,
 },
 {
