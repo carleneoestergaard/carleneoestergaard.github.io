@@ -7,45 +7,8 @@
     "tutorialSidebar": [
       {
         "type": "link",
-        "label": "Tutorial Intro",
+        "label": "Intro",
         "href": "/build/docs/intro"
-      },
-      {
-        "type": "category",
-        "label": "Tutorial - Basics",
-        "items": [
-          {
-            "type": "link",
-            "label": "Create a Page",
-            "href": "/build/docs/tutorial-basics/create-a-page"
-          },
-          {
-            "type": "link",
-            "label": "Create a Document",
-            "href": "/build/docs/tutorial-basics/create-a-document"
-          },
-          {
-            "type": "link",
-            "label": "Create a Blog Post",
-            "href": "/build/docs/tutorial-basics/create-a-blog-post"
-          },
-          {
-            "type": "link",
-            "label": "Markdown Features",
-            "href": "/build/docs/tutorial-basics/markdown-features"
-          },
-          {
-            "type": "link",
-            "label": "Deploy your site",
-            "href": "/build/docs/tutorial-basics/deploy-your-site"
-          },
-          {
-            "type": "link",
-            "label": "Congratulations!",
-            "href": "/build/docs/tutorial-basics/congratulations"
-          }
-        ],
-        "collapsed": true
       },
       {
         "type": "category",
@@ -106,6 +69,70 @@
       },
       {
         "type": "category",
+        "label": "Alteyx Server API",
+        "items": [
+          {
+            "type": "link",
+            "label": "Introduction",
+            "href": "/build/docs/AlteryxAPI/general"
+          },
+          {
+            "type": "link",
+            "label": "Permissions",
+            "href": "/build/docs/AlteryxAPI/permissions"
+          },
+          {
+            "type": "link",
+            "label": "API from Python",
+            "href": "/build/docs/AlteryxAPI/frompython"
+          },
+          {
+            "type": "link",
+            "label": "API from Powershell",
+            "href": "/build/docs/AlteryxAPI/frompowershell"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "type": "category",
+        "label": "Tutorial - Basics",
+        "items": [
+          {
+            "type": "link",
+            "label": "Create a Page",
+            "href": "/build/docs/tutorial-basics/create-a-page"
+          },
+          {
+            "type": "link",
+            "label": "Create a Document",
+            "href": "/build/docs/tutorial-basics/create-a-document"
+          },
+          {
+            "type": "link",
+            "label": "Create a Blog Post",
+            "href": "/build/docs/tutorial-basics/create-a-blog-post"
+          },
+          {
+            "type": "link",
+            "label": "Markdown Features",
+            "href": "/build/docs/tutorial-basics/markdown-features"
+          },
+          {
+            "type": "link",
+            "label": "Deploy your site",
+            "href": "/build/docs/tutorial-basics/deploy-your-site"
+          },
+          {
+            "type": "link",
+            "label": "Congratulations!",
+            "href": "/build/docs/tutorial-basics/congratulations"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "type": "category",
         "label": "Tutorial - Extras",
         "items": [
           {
@@ -124,6 +151,10 @@
     ]
   },
   "permalinkToSidebar": {
+    "/build/docs/AlteryxAPI/frompowershell": "tutorialSidebar",
+    "/build/docs/AlteryxAPI/frompython": "tutorialSidebar",
+    "/build/docs/AlteryxAPI/general": "tutorialSidebar",
+    "/build/docs/AlteryxAPI/permissions": "tutorialSidebar",
     "/build/docs/Connections/Bubble": "tutorialSidebar",
     "/build/docs/Connections/Economic": "tutorialSidebar",
     "/build/docs/Connections/Forecast": "tutorialSidebar",

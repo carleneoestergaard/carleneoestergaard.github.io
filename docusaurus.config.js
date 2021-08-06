@@ -30,7 +30,7 @@ module.exports = {
       
       
       navbar: {
-      title: 'Alteryx Documentation',
+      title: 'Documentation',
       logo: {
         alt: 'My Site Logo',
         src: 'img/Inviso_Logo.png',
@@ -40,14 +40,14 @@ module.exports = {
           type: 'doc',
           docId: 'intro',
           position: 'left',
-          label: 'Designer',
+          label: 'Alteryx',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        /**{to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/carleneoestergaard/inviso-alteryx',
           label: 'GitHub',
           position: 'right',
-        },
+        },*/
       ],
     },
     footer: {
@@ -62,8 +62,11 @@ module.exports = {
             },
           ],
         },
+        /** This is where links can go on the bottom
+        
+        
         {
-          title: 'Community',
+          title: 'Communityf',
           items: [
             {
               label: 'Stack Overflow',
@@ -91,7 +94,7 @@ module.exports = {
               href: 'https://github.com/facebook/docusaurus',
             },
           ],
-        },
+        },*/
       ],
       
     },

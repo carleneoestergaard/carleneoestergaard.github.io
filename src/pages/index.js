@@ -17,24 +17,25 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            go to documentation
           </Link>
         </div>
       </div>
     </header>
   );
 }
-
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`Inviso Docs`}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+       
       </main>
     </Layout>
   );
 }
+
+ // <HomepageFeatures put this in between the mains above to change the home page

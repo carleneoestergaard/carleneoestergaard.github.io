@@ -1,0 +1,26 @@
+{
+  "unversionedId": "API/permissions",
+  "id": "API/permissions",
+  "isDocsHomePage": false,
+  "title": "Permissions",
+  "description": "",
+  "source": "@site/docs/API/permissions.md",
+  "sourceDirName": "API",
+  "slug": "/API/permissions",
+  "permalink": "/build/docs/API/permissions",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/API/permissions.md",
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/build/docs/API/general"
+  },
+  "next": {
+    "title": "Create a Page",
+    "permalink": "/build/docs/tutorial-basics/create-a-page"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "AlteryxAPI/permissions",
+  "id": "AlteryxAPI/permissions",
+  "isDocsHomePage": false,
+  "title": "Permissions",
+  "description": "In order to use the Alteryx Server AP, your user needs to have the access granted.",
+  "source": "@site/docs/AlteryxAPI/permissions.md",
+  "sourceDirName": "AlteryxAPI",
+  "slug": "/AlteryxAPI/permissions",
+  "permalink": "/build/docs/AlteryxAPI/permissions",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/AlteryxAPI/permissions.md",
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/build/docs/AlteryxAPI/general"
+  },
+  "next": {
+    "title": "API from Python",
+    "permalink": "/build/docs/AlteryxAPI/frompython"
+  }
+}

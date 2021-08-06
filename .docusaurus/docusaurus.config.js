@@ -17,7 +17,7 @@ export default {
       "searchParameters": {}
     },
     "navbar": {
-      "title": "Alteryx Documentation",
+      "title": "Documentation",
       "logo": {
         "alt": "My Site Logo",
         "src": "img/Inviso_Logo.png"
@@ -27,18 +27,8 @@ export default {
           "type": "doc",
           "docId": "intro",
           "position": "left",
-          "label": "Designer",
+          "label": "Alteryx",
           "activeSidebarClassName": "navbar__link--active"
-        },
-        {
-          "to": "/blog",
-          "label": "Blog",
-          "position": "left"
-        },
-        {
-          "href": "https://github.com/carleneoestergaard/inviso-alteryx",
-          "label": "GitHub",
-          "position": "right"
         }
       ],
       "hideOnScroll": false
@@ -52,36 +42,6 @@ export default {
             {
               "label": "Designer",
               "to": "/docs/intro"
-            }
-          ]
-        },
-        {
-          "title": "Community",
-          "items": [
-            {
-              "label": "Stack Overflow",
-              "href": "https://stackoverflow.com/questions/tagged/docusaurus"
-            },
-            {
-              "label": "Discord",
-              "href": "https://discordapp.com/invite/docusaurus"
-            },
-            {
-              "label": "Twitter",
-              "href": "https://twitter.com/docusaurus"
-            }
-          ]
-        },
-        {
-          "title": "More",
-          "items": [
-            {
-              "label": "Blog",
-              "to": "/blog"
-            },
-            {
-              "label": "GitHub",
-              "href": "https://github.com/facebook/docusaurus"
             }
           ]
         }
@@ -112,7 +72,7 @@ export default {
       "@docusaurus/preset-classic",
       {
         "docs": {
-          "sidebarPath": "/Users/holgermauritzen/Documents/GitHub/carleneoestergaard.github.io/sidebars.js",
+          "sidebarPath": "/Users/carlenejones/GitHub/carleneoestergaard.github.io/sidebars.js",
           "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/"
         },
         "blog": {
@@ -120,7 +80,7 @@ export default {
           "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/blog/"
         },
         "theme": {
-          "customCss": "/Users/holgermauritzen/Documents/GitHub/carleneoestergaard.github.io/src/css/custom.css"
+          "customCss": "/Users/carlenejones/GitHub/carleneoestergaard.github.io/src/css/custom.css"
         }
       }
     ]

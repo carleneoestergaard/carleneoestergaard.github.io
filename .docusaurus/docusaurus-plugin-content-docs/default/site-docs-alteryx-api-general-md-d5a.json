@@ -1,0 +1,26 @@
+{
+  "unversionedId": "AlteryxAPI/general",
+  "id": "AlteryxAPI/general",
+  "isDocsHomePage": false,
+  "title": "Introduction",
+  "description": "Alteryx server API is really helpful when you need to trigger a workflow based on an event, but it is not the easiest thing to work with.",
+  "source": "@site/docs/AlteryxAPI/general.md",
+  "sourceDirName": "AlteryxAPI",
+  "slug": "/AlteryxAPI/general",
+  "permalink": "/build/docs/AlteryxAPI/general",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/AlteryxAPI/general.md",
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "WebCRM",
+    "permalink": "/build/docs/Connections/WebCRM"
+  },
+  "next": {
+    "title": "Permissions",
+    "permalink": "/build/docs/AlteryxAPI/permissions"
+  }
+}

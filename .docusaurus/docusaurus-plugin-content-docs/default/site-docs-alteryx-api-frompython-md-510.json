@@ -1,0 +1,26 @@
+{
+  "unversionedId": "AlteryxAPI/frompython",
+  "id": "AlteryxAPI/frompython",
+  "isDocsHomePage": false,
+  "title": "API from Python",
+  "description": "How to execute Alteryx workflows with Python",
+  "source": "@site/docs/AlteryxAPI/frompython.md",
+  "sourceDirName": "AlteryxAPI",
+  "slug": "/AlteryxAPI/frompython",
+  "permalink": "/build/docs/AlteryxAPI/frompython",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/AlteryxAPI/frompython.md",
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Permissions",
+    "permalink": "/build/docs/AlteryxAPI/permissions"
+  },
+  "next": {
+    "title": "API from Powershell",
+    "permalink": "/build/docs/AlteryxAPI/frompowershell"
+  }
+}

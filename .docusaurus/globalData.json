@@ -11,6 +11,26 @@
           "mainDocId": "intro",
           "docs": [
             {
+              "id": "AlteryxAPI/frompowershell",
+              "path": "/build/docs/AlteryxAPI/frompowershell",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "AlteryxAPI/frompython",
+              "path": "/build/docs/AlteryxAPI/frompython",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "AlteryxAPI/general",
+              "path": "/build/docs/AlteryxAPI/general",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "AlteryxAPI/permissions",
+              "path": "/build/docs/AlteryxAPI/permissions",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "Connections/Bubble",
               "path": "/build/docs/Connections/Bubble",
               "sidebar": "tutorialSidebar"
