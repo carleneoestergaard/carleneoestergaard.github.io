@@ -10,15 +10,89 @@
           "versionEditUrlLocalized": "https://github.com/facebook/docusaurus/edit/master/website/i18n/en/docusaurus-plugin-content-docs/current",
           "isLast": true,
           "routePriority": -1,
-          "sidebarFilePath": "/Users/holgermauritzen/Documents/GitHub/carleneoestergaard.github.io/sidebars.js",
-          "contentPath": "/Users/holgermauritzen/Documents/GitHub/carleneoestergaard.github.io/docs",
-          "contentPathLocalized": "/Users/holgermauritzen/Documents/GitHub/carleneoestergaard.github.io/i18n/en/docusaurus-plugin-content-docs/current",
+          "sidebarFilePath": "/Users/carlenejones/GitHub/carleneoestergaard.github.io/sidebars.js",
+          "contentPath": "/Users/carlenejones/GitHub/carleneoestergaard.github.io/docs",
+          "contentPathLocalized": "/Users/carlenejones/GitHub/carleneoestergaard.github.io/i18n/en/docusaurus-plugin-content-docs/current",
           "mainDocId": "intro",
           "sidebars": {
             "tutorialSidebar": [
               {
                 "type": "doc",
                 "id": "intro"
+              },
+              {
+                "type": "category",
+                "label": "Connections",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "Connections/Bubble"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Connections/Economic"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Connections/Fixer.io"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Connections/Forecast"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Connections/Hubspot"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Connections/Maconomy"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Connections/Microsoft Dynamics"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Connections/Oracle"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Connections/Rackbeat"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Connections/Snowflake"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Connections/WebCRM"
+                  }
+                ],
+                "collapsed": true
+              },
+              {
+                "type": "category",
+                "label": "Alteyx Server API",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "AlteryxAPI/general"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "AlteryxAPI/permissions"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "AlteryxAPI/frompython"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "AlteryxAPI/frompowershell"
+                  }
+                ],
+                "collapsed": true
               },
               {
                 "type": "category",
@@ -53,57 +127,6 @@
               },
               {
                 "type": "category",
-                "label": "Connections",
-                "items": [
-                  {
-                    "type": "doc",
-                    "id": "Connections/Bubble"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "Connections/Economic"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "Connections/Fixer.io"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "Connections/Forecast"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "Connections/HubSpot"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "Connections/Maconomy"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "Connections/Microsoft Dynamics"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "Connections/Oracle"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "Connections/Rackbeat"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "Connections/Snowflake"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "Connections/WebCRM"
-                  }
-                ],
-                "collapsed": true
-              },
-              {
-                "type": "category",
                 "label": "Tutorial - Extras",
                 "items": [
                   {
@@ -120,11 +143,15 @@
             ]
           },
           "permalinkToSidebar": {
+            "/build/docs/AlteryxAPI/frompowershell": "tutorialSidebar",
+            "/build/docs/AlteryxAPI/frompython": "tutorialSidebar",
+            "/build/docs/AlteryxAPI/general": "tutorialSidebar",
+            "/build/docs/AlteryxAPI/permissions": "tutorialSidebar",
             "/build/docs/Connections/Bubble": "tutorialSidebar",
             "/build/docs/Connections/Economic": "tutorialSidebar",
             "/build/docs/Connections/Fixer.io": "tutorialSidebar",
             "/build/docs/Connections/Forecast": "tutorialSidebar",
-            "/build/docs/Connections/HubSpot": "tutorialSidebar",
+            "/build/docs/Connections/Hubspot": "tutorialSidebar",
             "/build/docs/Connections/Maconomy": "tutorialSidebar",
             "/build/docs/Connections/Microsoft Dynamics": "tutorialSidebar",
             "/build/docs/Connections/Oracle": "tutorialSidebar",
@@ -143,6 +170,110 @@
           },
           "docs": [
             {
+              "unversionedId": "AlteryxAPI/frompowershell",
+              "id": "AlteryxAPI/frompowershell",
+              "isDocsHomePage": false,
+              "title": "API from Powershell",
+              "description": "How to execute Alteryx workflows with Powershell",
+              "source": "@site/docs/AlteryxAPI/frompowershell.md",
+              "sourceDirName": "AlteryxAPI",
+              "slug": "/AlteryxAPI/frompowershell",
+              "permalink": "/build/docs/AlteryxAPI/frompowershell",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/AlteryxAPI/frompowershell.md",
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "sidebar_position": 4
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "API from Python",
+                "permalink": "/build/docs/AlteryxAPI/frompython"
+              },
+              "next": {
+                "title": "Create a Page",
+                "permalink": "/build/docs/tutorial-basics/create-a-page"
+              }
+            },
+            {
+              "unversionedId": "AlteryxAPI/frompython",
+              "id": "AlteryxAPI/frompython",
+              "isDocsHomePage": false,
+              "title": "API from Python",
+              "description": "How to execute Alteryx workflows with Python",
+              "source": "@site/docs/AlteryxAPI/frompython.md",
+              "sourceDirName": "AlteryxAPI",
+              "slug": "/AlteryxAPI/frompython",
+              "permalink": "/build/docs/AlteryxAPI/frompython",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/AlteryxAPI/frompython.md",
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Permissions",
+                "permalink": "/build/docs/AlteryxAPI/permissions"
+              },
+              "next": {
+                "title": "API from Powershell",
+                "permalink": "/build/docs/AlteryxAPI/frompowershell"
+              }
+            },
+            {
+              "unversionedId": "AlteryxAPI/general",
+              "id": "AlteryxAPI/general",
+              "isDocsHomePage": false,
+              "title": "Introduction",
+              "description": "Alteryx server API is really helpful when you need to trigger a workflow based on an event, but it is not the easiest thing to work with.",
+              "source": "@site/docs/AlteryxAPI/general.md",
+              "sourceDirName": "AlteryxAPI",
+              "slug": "/AlteryxAPI/general",
+              "permalink": "/build/docs/AlteryxAPI/general",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/AlteryxAPI/general.md",
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "WebCRM",
+                "permalink": "/build/docs/Connections/WebCRM"
+              },
+              "next": {
+                "title": "Permissions",
+                "permalink": "/build/docs/AlteryxAPI/permissions"
+              }
+            },
+            {
+              "unversionedId": "AlteryxAPI/permissions",
+              "id": "AlteryxAPI/permissions",
+              "isDocsHomePage": false,
+              "title": "Permissions",
+              "description": "In order to use the Alteryx Server AP, your user needs to have the access granted.",
+              "source": "@site/docs/AlteryxAPI/permissions.md",
+              "sourceDirName": "AlteryxAPI",
+              "slug": "/AlteryxAPI/permissions",
+              "permalink": "/build/docs/AlteryxAPI/permissions",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/AlteryxAPI/permissions.md",
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Introduction",
+                "permalink": "/build/docs/AlteryxAPI/general"
+              },
+              "next": {
+                "title": "API from Python",
+                "permalink": "/build/docs/AlteryxAPI/frompython"
+              }
+            },
+            {
               "unversionedId": "Connections/Bubble",
               "id": "Connections/Bubble",
               "isDocsHomePage": false,
@@ -157,8 +288,8 @@
               "frontMatter": {},
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Congratulations!",
-                "permalink": "/build/docs/tutorial-basics/congratulations"
+                "title": "Intro",
+                "permalink": "/build/docs/intro"
               },
               "next": {
                 "title": "Economic",
@@ -231,20 +362,20 @@
               },
               "next": {
                 "title": "HubSpot",
-                "permalink": "/build/docs/Connections/HubSpot"
+                "permalink": "/build/docs/Connections/Hubspot"
               }
             },
             {
-              "unversionedId": "Connections/HubSpot",
-              "id": "Connections/HubSpot",
+              "unversionedId": "Connections/Hubspot",
+              "id": "Connections/Hubspot",
               "isDocsHomePage": false,
               "title": "HubSpot",
               "description": "HubSpot's API support both OAuth and API keys.",
-              "source": "@site/docs/Connections/HubSpot.md",
+              "source": "@site/docs/Connections/Hubspot.md",
               "sourceDirName": "Connections",
-              "slug": "/Connections/HubSpot",
-              "permalink": "/build/docs/Connections/HubSpot",
-              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/Connections/HubSpot.md",
+              "slug": "/Connections/Hubspot",
+              "permalink": "/build/docs/Connections/Hubspot",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/Connections/Hubspot.md",
               "version": "current",
               "frontMatter": {},
               "sidebar": "tutorialSidebar",
@@ -273,7 +404,7 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "HubSpot",
-                "permalink": "/build/docs/Connections/HubSpot"
+                "permalink": "/build/docs/Connections/Hubspot"
               },
               "next": {
                 "title": "Microsoft Dynamics",
@@ -391,16 +522,16 @@
                 "permalink": "/build/docs/Connections/Snowflake"
               },
               "next": {
-                "title": "Manage Docs Versions",
-                "permalink": "/build/docs/tutorial-extras/manage-docs-versions"
+                "title": "Introduction",
+                "permalink": "/build/docs/AlteryxAPI/general"
               }
             },
             {
               "unversionedId": "intro",
               "id": "intro",
               "isDocsHomePage": false,
-              "title": "Tutorial Intro",
-              "description": "Let's discover Docusaurus in less than 5 minutes.",
+              "title": "Intro",
+              "description": "Here you fill find documentation on common connections, problems, past training and more",
               "source": "@site/docs/intro.md",
               "sourceDirName": ".",
               "slug": "/intro",
@@ -413,8 +544,8 @@
               },
               "sidebar": "tutorialSidebar",
               "next": {
-                "title": "Create a Page",
-                "permalink": "/build/docs/tutorial-basics/create-a-page"
+                "title": "Bubble",
+                "permalink": "/build/docs/Connections/Bubble"
               }
             },
             {
@@ -439,8 +570,8 @@
                 "permalink": "/build/docs/tutorial-basics/deploy-your-site"
               },
               "next": {
-                "title": "Bubble",
-                "permalink": "/build/docs/Connections/Bubble"
+                "title": "Manage Docs Versions",
+                "permalink": "/build/docs/tutorial-extras/manage-docs-versions"
               }
             },
             {
@@ -513,8 +644,8 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Tutorial Intro",
-                "permalink": "/build/docs/intro"
+                "title": "API from Powershell",
+                "permalink": "/build/docs/AlteryxAPI/frompowershell"
               },
               "next": {
                 "title": "Create a Document",
@@ -591,8 +722,8 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "WebCRM",
-                "permalink": "/build/docs/Connections/WebCRM"
+                "title": "Congratulations!",
+                "permalink": "/build/docs/tutorial-basics/congratulations"
               },
               "next": {
                 "title": "Translate your site",
@@ -782,6 +913,11 @@
     "default": [
       {
         "type": "jsx",
+        "permalink": "/build/helloReact",
+        "source": "@site/src/pages/helloReact.js"
+      },
+      {
+        "type": "jsx",
         "permalink": "/build/",
         "source": "@site/src/pages/index.js"
       },
@@ -789,11 +925,6 @@
         "type": "mdx",
         "permalink": "/build/markdown-page",
         "source": "@site/src/pages/markdown-page.md"
-      },
-      {
-        "type": "jsx",
-        "permalink": "/build/my-react-page",
-        "source": "@site/src/pages/my-react-page.js"
       }
     ]
   },
