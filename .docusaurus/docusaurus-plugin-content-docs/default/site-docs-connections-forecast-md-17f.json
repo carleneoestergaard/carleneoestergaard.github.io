@@ -2,8 +2,8 @@
   "unversionedId": "Connections/Forecast",
   "id": "Connections/Forecast",
   "isDocsHomePage": false,
-  "title": "Harvest",
-  "description": "Macros",
+  "title": "Forecast",
+  "description": "Forecast data can be extracted through the Harvest API.",
   "source": "@site/docs/Connections/Forecast.md",
   "sourceDirName": "Connections",
   "slug": "/Connections/Forecast",
@@ -17,7 +17,7 @@
     "permalink": "/build/docs/Connections/Fixer.io"
   },
   "next": {
-    "title": "HubSpot",
-    "permalink": "/build/docs/Connections/Hubspot"
+    "title": "Harvest",
+    "permalink": "/build/docs/Connections/Harvest"
   }
 }

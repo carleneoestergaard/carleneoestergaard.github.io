@@ -69,7 +69,7 @@ export default [
 },
 {
   path: '/build/docs',
-  component: ComponentCreator('/build/docs','b80'),
+  component: ComponentCreator('/build/docs','125'),
   
   routes: [
 {
@@ -110,6 +110,11 @@ export default [
 {
   path: '/build/docs/Connections/Forecast',
   component: ComponentCreator('/build/docs/Connections/Forecast','2e8'),
+  exact: true,
+},
+{
+  path: '/build/docs/Connections/Harvest',
+  component: ComponentCreator('/build/docs/Connections/Harvest','017'),
   exact: true,
 },
 {

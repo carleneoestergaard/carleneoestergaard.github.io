@@ -51,6 +51,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "Connections/Harvest",
+              "path": "/build/docs/Connections/Harvest",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "Connections/Hubspot",
               "path": "/build/docs/Connections/Hubspot",
               "sidebar": "tutorialSidebar"

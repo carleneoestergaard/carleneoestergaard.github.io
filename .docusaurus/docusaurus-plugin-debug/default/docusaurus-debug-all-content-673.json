@@ -42,6 +42,10 @@
                   },
                   {
                     "type": "doc",
+                    "id": "Connections/Harvest"
+                  },
+                  {
+                    "type": "doc",
                     "id": "Connections/Hubspot"
                   },
                   {
@@ -151,6 +155,7 @@
             "/build/docs/Connections/Economic": "tutorialSidebar",
             "/build/docs/Connections/Fixer.io": "tutorialSidebar",
             "/build/docs/Connections/Forecast": "tutorialSidebar",
+            "/build/docs/Connections/Harvest": "tutorialSidebar",
             "/build/docs/Connections/Hubspot": "tutorialSidebar",
             "/build/docs/Connections/Maconomy": "tutorialSidebar",
             "/build/docs/Connections/Microsoft Dynamics": "tutorialSidebar",
@@ -338,7 +343,7 @@
                 "permalink": "/build/docs/Connections/Economic"
               },
               "next": {
-                "title": "Harvest",
+                "title": "Forecast",
                 "permalink": "/build/docs/Connections/Forecast"
               }
             },
@@ -346,8 +351,8 @@
               "unversionedId": "Connections/Forecast",
               "id": "Connections/Forecast",
               "isDocsHomePage": false,
-              "title": "Harvest",
-              "description": "Macros",
+              "title": "Forecast",
+              "description": "Forecast data can be extracted through the Harvest API.",
               "source": "@site/docs/Connections/Forecast.md",
               "sourceDirName": "Connections",
               "slug": "/Connections/Forecast",
@@ -359,6 +364,29 @@
               "previous": {
                 "title": "Fixer.io",
                 "permalink": "/build/docs/Connections/Fixer.io"
+              },
+              "next": {
+                "title": "Harvest",
+                "permalink": "/build/docs/Connections/Harvest"
+              }
+            },
+            {
+              "unversionedId": "Connections/Harvest",
+              "id": "Connections/Harvest",
+              "isDocsHomePage": false,
+              "title": "Harvest",
+              "description": "Harvest data can be extracted through the Harvest API.",
+              "source": "@site/docs/Connections/Harvest.md",
+              "sourceDirName": "Connections",
+              "slug": "/Connections/Harvest",
+              "permalink": "/build/docs/Connections/Harvest",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/Connections/Harvest.md",
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Forecast",
+                "permalink": "/build/docs/Connections/Forecast"
               },
               "next": {
                 "title": "HubSpot",
@@ -381,7 +409,7 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "Harvest",
-                "permalink": "/build/docs/Connections/Forecast"
+                "permalink": "/build/docs/Connections/Harvest"
               },
               "next": {
                 "title": "Maconomy",

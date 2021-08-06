@@ -3,7 +3,7 @@
   "id": "Connections/Harvest",
   "isDocsHomePage": false,
   "title": "Harvest",
-  "description": "",
+  "description": "Harvest data can be extracted through the Harvest API.",
   "source": "@site/docs/Connections/Harvest.md",
   "sourceDirName": "Connections",
   "slug": "/Connections/Harvest",
@@ -13,11 +13,11 @@
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Harvest",
+    "title": "Forecast",
     "permalink": "/build/docs/Connections/Forecast"
   },
   "next": {
     "title": "HubSpot",
-    "permalink": "/build/docs/Connections/HubSpot"
+    "permalink": "/build/docs/Connections/Hubspot"
   }
 }

@@ -99,7 +99,7 @@
   "/build/search-aa4": {
     "component": "efa66bd2"
   },
-  "/build/docs-b80": {
+  "/build/docs-125": {
     "component": "1be78505",
     "versionMetadata": "935f2afb"
   },
@@ -134,6 +134,10 @@
   "/build/docs/Connections/Forecast-2e8": {
     "component": "17896441",
     "content": "17fefddf"
+  },
+  "/build/docs/Connections/Harvest-017": {
+    "component": "17896441",
+    "content": "992b3140"
   },
   "/build/docs/Connections/Hubspot-bc6": {
     "component": "17896441",

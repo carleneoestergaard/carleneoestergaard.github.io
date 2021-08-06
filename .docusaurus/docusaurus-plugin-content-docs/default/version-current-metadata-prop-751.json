@@ -31,8 +31,13 @@
           },
           {
             "type": "link",
-            "label": "Harvest",
+            "label": "Forecast",
             "href": "/build/docs/Connections/Forecast"
+          },
+          {
+            "type": "link",
+            "label": "Harvest",
+            "href": "/build/docs/Connections/Harvest"
           },
           {
             "type": "link",
@@ -164,6 +169,7 @@
     "/build/docs/Connections/Economic": "tutorialSidebar",
     "/build/docs/Connections/Fixer.io": "tutorialSidebar",
     "/build/docs/Connections/Forecast": "tutorialSidebar",
+    "/build/docs/Connections/Harvest": "tutorialSidebar",
     "/build/docs/Connections/Hubspot": "tutorialSidebar",
     "/build/docs/Connections/Maconomy": "tutorialSidebar",
     "/build/docs/Connections/Microsoft Dynamics": "tutorialSidebar",
