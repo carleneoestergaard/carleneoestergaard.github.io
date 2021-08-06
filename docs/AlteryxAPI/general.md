@@ -11,3 +11,6 @@ A common case is to use power automate to trigger an Alteryx flow, which is poss
 
 
 Customers that we have used it with: 
+
+
+Our own typeit solution
