@@ -65,11 +65,15 @@
                   },
                   {
                     "type": "doc",
+                    "id": "Connections/Fixer.io"
+                  },
+                  {
+                    "type": "doc",
                     "id": "Connections/Forecast"
                   },
                   {
                     "type": "doc",
-                    "id": "Connections/Hubspot"
+                    "id": "Connections/HubSpot"
                   },
                   {
                     "type": "doc",
@@ -118,8 +122,9 @@
           "permalinkToSidebar": {
             "/build/docs/Connections/Bubble": "tutorialSidebar",
             "/build/docs/Connections/Economic": "tutorialSidebar",
+            "/build/docs/Connections/Fixer.io": "tutorialSidebar",
             "/build/docs/Connections/Forecast": "tutorialSidebar",
-            "/build/docs/Connections/Hubspot": "tutorialSidebar",
+            "/build/docs/Connections/HubSpot": "tutorialSidebar",
             "/build/docs/Connections/Maconomy": "tutorialSidebar",
             "/build/docs/Connections/Microsoft Dynamics": "tutorialSidebar",
             "/build/docs/Connections/Oracle": "tutorialSidebar",
@@ -179,7 +184,30 @@
                 "permalink": "/build/docs/Connections/Bubble"
               },
               "next": {
-                "title": "Forecast",
+                "title": "Fixer.io",
+                "permalink": "/build/docs/Connections/Fixer.io"
+              }
+            },
+            {
+              "unversionedId": "Connections/Fixer.io",
+              "id": "Connections/Fixer.io",
+              "isDocsHomePage": false,
+              "title": "Fixer.io",
+              "description": "Fixer.io provides an exchange rate API.",
+              "source": "@site/docs/Connections/Fixer.io.md",
+              "sourceDirName": "Connections",
+              "slug": "/Connections/Fixer.io",
+              "permalink": "/build/docs/Connections/Fixer.io",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/Connections/Fixer.io.md",
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Economic",
+                "permalink": "/build/docs/Connections/Economic"
+              },
+              "next": {
+                "title": "Harvest",
                 "permalink": "/build/docs/Connections/Forecast"
               }
             },
@@ -187,8 +215,8 @@
               "unversionedId": "Connections/Forecast",
               "id": "Connections/Forecast",
               "isDocsHomePage": false,
-              "title": "Forecast",
-              "description": "As Forecast dosen't have an official public API, we use one of the multiple third-party applications available. In this case we use the API client for Go, which dosen't require any downloads.",
+              "title": "Harvest",
+              "description": "Macros",
               "source": "@site/docs/Connections/Forecast.md",
               "sourceDirName": "Connections",
               "slug": "/Connections/Forecast",
@@ -198,30 +226,30 @@
               "frontMatter": {},
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Economic",
-                "permalink": "/build/docs/Connections/Economic"
+                "title": "Fixer.io",
+                "permalink": "/build/docs/Connections/Fixer.io"
               },
               "next": {
-                "title": "Hubspot",
-                "permalink": "/build/docs/Connections/Hubspot"
+                "title": "HubSpot",
+                "permalink": "/build/docs/Connections/HubSpot"
               }
             },
             {
-              "unversionedId": "Connections/Hubspot",
-              "id": "Connections/Hubspot",
+              "unversionedId": "Connections/HubSpot",
+              "id": "Connections/HubSpot",
               "isDocsHomePage": false,
-              "title": "Hubspot",
-              "description": "",
-              "source": "@site/docs/Connections/Hubspot.md",
+              "title": "HubSpot",
+              "description": "HubSpot's API support both OAuth and API keys.",
+              "source": "@site/docs/Connections/HubSpot.md",
               "sourceDirName": "Connections",
-              "slug": "/Connections/Hubspot",
-              "permalink": "/build/docs/Connections/Hubspot",
-              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/Connections/Hubspot.md",
+              "slug": "/Connections/HubSpot",
+              "permalink": "/build/docs/Connections/HubSpot",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/Connections/HubSpot.md",
               "version": "current",
               "frontMatter": {},
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Forecast",
+                "title": "Harvest",
                 "permalink": "/build/docs/Connections/Forecast"
               },
               "next": {
@@ -244,8 +272,8 @@
               "frontMatter": {},
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Hubspot",
-                "permalink": "/build/docs/Connections/Hubspot"
+                "title": "HubSpot",
+                "permalink": "/build/docs/Connections/HubSpot"
               },
               "next": {
                 "title": "Microsoft Dynamics",

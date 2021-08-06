@@ -21,13 +21,18 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "Connections/Fixer.io",
+              "path": "/build/docs/Connections/Fixer.io",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "Connections/Forecast",
               "path": "/build/docs/Connections/Forecast",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "Connections/Hubspot",
-              "path": "/build/docs/Connections/Hubspot",
+              "id": "Connections/HubSpot",
+              "path": "/build/docs/Connections/HubSpot",
               "sidebar": "tutorialSidebar"
             },
             {

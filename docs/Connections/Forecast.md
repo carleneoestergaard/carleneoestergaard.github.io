@@ -1,6 +1,4 @@
-# Forecast
-
-As Forecast dosen't have an [official public API](https://help.getharvest.com/forecast/faqs/faq-list/api/), we use one of the multiple third-party applications available. In this case we use the [API client for Go](https://github.com/joefitzgerald/forecast), which dosen't require any downloads. 
+# Harvest
 
 ### Macros
 Thankfully Charlotte already has set up macros that extract and parse Forecast data, which should cover any data cravings you might have. The macros can be [downloaded here](https://drive.google.com/file/d/1osD5_4PJNNA4RUbtZMAN2303PeCA3-9w/view?usp=sharing). 
@@ -8,7 +6,6 @@ Thankfully Charlotte already has set up macros that extract and parse Forecast d
 
 ### Further documentation
 While the abovementioned macros should cover most uses, here follows a brief overview of the API. 
-Further documentation can be found [here](https://github.com/joefitzgerald/forecast)
 
 #### Setting up the API client
 In order to access the API you need 3 things: 

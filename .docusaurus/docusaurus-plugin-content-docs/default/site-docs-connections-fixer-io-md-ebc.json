@@ -1,0 +1,23 @@
+{
+  "unversionedId": "Connections/Fixer.io",
+  "id": "Connections/Fixer.io",
+  "isDocsHomePage": false,
+  "title": "Fixer.io",
+  "description": "Fixer.io provides an exchange rate API.",
+  "source": "@site/docs/Connections/Fixer.io.md",
+  "sourceDirName": "Connections",
+  "slug": "/Connections/Fixer.io",
+  "permalink": "/build/docs/Connections/Fixer.io",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/Connections/Fixer.io.md",
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Economic",
+    "permalink": "/build/docs/Connections/Economic"
+  },
+  "next": {
+    "title": "Harvest",
+    "permalink": "/build/docs/Connections/Forecast"
+  }
+}

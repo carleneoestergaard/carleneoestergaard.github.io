@@ -8,6 +8,41 @@ export default [
   exact: true,
 },
 {
+  path: '/build/__docusaurus/debug',
+  component: ComponentCreator('/build/__docusaurus/debug','553'),
+  exact: true,
+},
+{
+  path: '/build/__docusaurus/debug/config',
+  component: ComponentCreator('/build/__docusaurus/debug/config','c66'),
+  exact: true,
+},
+{
+  path: '/build/__docusaurus/debug/content',
+  component: ComponentCreator('/build/__docusaurus/debug/content','c02'),
+  exact: true,
+},
+{
+  path: '/build/__docusaurus/debug/globalData',
+  component: ComponentCreator('/build/__docusaurus/debug/globalData','514'),
+  exact: true,
+},
+{
+  path: '/build/__docusaurus/debug/metadata',
+  component: ComponentCreator('/build/__docusaurus/debug/metadata','696'),
+  exact: true,
+},
+{
+  path: '/build/__docusaurus/debug/registry',
+  component: ComponentCreator('/build/__docusaurus/debug/registry','df9'),
+  exact: true,
+},
+{
+  path: '/build/__docusaurus/debug/routes',
+  component: ComponentCreator('/build/__docusaurus/debug/routes','03b'),
+  exact: true,
+},
+{
   path: '/build/blog',
   component: ComponentCreator('/build/blog','930'),
   exact: true,
@@ -69,7 +104,7 @@ export default [
 },
 {
   path: '/build/docs',
-  component: ComponentCreator('/build/docs','61a'),
+  component: ComponentCreator('/build/docs','104'),
   
   routes: [
 {
@@ -83,13 +118,18 @@ export default [
   exact: true,
 },
 {
+  path: '/build/docs/Connections/Fixer.io',
+  component: ComponentCreator('/build/docs/Connections/Fixer.io','e73'),
+  exact: true,
+},
+{
   path: '/build/docs/Connections/Forecast',
   component: ComponentCreator('/build/docs/Connections/Forecast','2e8'),
   exact: true,
 },
 {
-  path: '/build/docs/Connections/Hubspot',
-  component: ComponentCreator('/build/docs/Connections/Hubspot','bc6'),
+  path: '/build/docs/Connections/HubSpot',
+  component: ComponentCreator('/build/docs/Connections/HubSpot','ec4'),
   exact: true,
 },
 {
